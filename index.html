@@ -50,13 +50,43 @@ nav ul{
     list-style:none;
 }
 
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(167, 196, 199, 0.15);
+}
+.footer-col h5 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #9de13a;
+    margin-bottom: 15px;
+}
+.footer-col a {
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
 @media(max-width:768px){
 
+.footer-top{
+        grid-template-columns: 1fr;
+    }
 .menu-toggle{
     display:block;
 }
 .header{
     padding:0 20px;
+    background-color: rgb(255 255 255 / 1) !important;
 }
 
     .topmenu{
@@ -103,7 +133,7 @@ nav ul li a{
 
 <body class="antialiased text-gray-800 bg-white">
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm header">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-md header">
     <div class="max-w-6xl mx-auto px-6 py-2 topmenu">
       <a href="#home" class="flex items-center gap-3 logo">
         <img src="img/logo.jpg" alt=" " class="w-60 h-auto object-cover">
@@ -377,12 +407,61 @@ nav ul li a{
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
+  <!-- <footer class="bg-gray-800 text-white py-8">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="text-sm">© AlignAsya PhysioTherapy & Wellness Center — Dr. Renu Saroj. All rights reserved.</p>
       <div class="text-sm">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a> • <a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a> • Google</span></div>
     </div>
-  </footer>
+  </footer> -->
+
+  <!-- ============ FOOTER ============ -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo" style="background: #fff; padding: 10px 22px; border-radius: 14px; display: inline-flex; box-shadow: 0 8px 24px -12px rgba(0,0,0,0.3);">
+          <img src="img/logo.jpg" alt="AlignAsya" style="height: 56px; width: auto; mix-blend-mode: multiply;" />
+        </div>
+        <div style="height: 28px;"></div>
+        <p>A modern physiotherapy and wellness sanctuary led by Dr. Renu Saroj. Healing movement, restoring life — one body at a time.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Care</h5>
+        <ul>
+          <li><a href="#services">Orthopedics</a></li>
+          <li><a href="#services">Neurological</a></li>
+          <li><a href="#services">Sports Rehab</a></li>
+          <li><a href="#services">Geriatric</a></li>
+          <li><a href="#services">Pediatric</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Modalities</h5>
+        <ul>
+          <li><a href="#services">Dry Needling</a></li>
+          <li><a href="#services">Kinesio Taping</a></li>
+          <li><a href="#services">Cupping</a></li>
+          <li><a href="#services">Manual Therapy</a></li>
+          <li><a href="#services">Women's Health</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a></li>
+          <li><a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></li>
+        </ul>
+      </div>      
+    </div>
+    <div class="footer-bottom pt-6">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs">© AlignAsya PhysioTherapy & Wellness Center — Dr. Renu Saroj  · Reg. PT/012470  · All rights reserved.</p>
+      <div class="text-xs">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a> • <a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a> • <a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></span></div>
+    </div>
+  </div>
+</footer>
 
   <script>
     // Mobile menu simple toggle (enhancement)
