@@ -26,14 +26,80 @@
     .aa-green {
       background-color: rgb(120 169 50);
     }
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+    background:none;
+    border:none;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+.header{
+    padding:0 20px;
+}
+
+nav{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+nav.active{
+    display:block;
+}
+
+nav ul{
+    display:flex;
+    gap: 15px;
+    flex-direction:column;
+    padding:20px;
+    background-color: #31a9d3;
+    color:#fff;
+}
+
+nav ul li{
+    margin:5px 0;
+        display: flex;
+        font-size: medium;
+}
+nav ul li a{ 
+    width: 100%;
+}
+.logo img{
+    width: 11rem;
+    height: auto;
+  }
+}
   </style>
 </head>
 
 <body class="antialiased text-gray-800 bg-white">
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
-    <div class="max-w-6xl mx-auto px-6 py-2 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-3">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm header">
+    <div class="max-w-6xl mx-auto px-6 py-2 flex">
+      <a href="#home" class="flex items-center gap-3 logo">
         <img src="img/logo.jpg" alt=" " class="w-60 h-auto object-cover">
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -44,8 +110,22 @@
       </nav>
       <a href="#contact" class="hidden md:inline-block aa-blue text-white px-4 py-2 rounded-md text-sm">Book a
         Consultation</a>
-      <button id="mobileMenuBtn" class="md:hidden p-2">☰</button>
+      <!-- <button id="mobileMenuBtn" class="md:hidden p-2">☰</button> -->
     </div>
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+        <nav id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    </button>
+
+    
   </header>
 
   <!-- Hero -->
@@ -301,10 +381,12 @@
 
   <script>
     // Mobile menu simple toggle (enhancement)
-    const btn = document.getElementById('mobileMenuBtn');
-    btn?.addEventListener('click', () => {
-      alert('Mobile menu placeholder. You can add a slide-over menu here.');
-    });
+    const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
   </script>
 
   <!-- Notes for the owner (do not delete) -->
