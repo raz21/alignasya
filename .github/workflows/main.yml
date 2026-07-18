@@ -1,0 +1,23 @@
+name: Deploy via SSH Rsync
+
+on:
+  push:
+    branches:
+      - main  # Change to master if your default branch is master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Deploy to Namecheap via Rsync
+      uses: easingthemes/ssh-deploy@v5.1.0
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.ALIGNASYA_PRIVATE_KEY }} # Add your private key to GitHub secrets
+        ARGS: "-rlgoDIVzc --delete" # Syncs changes and deletes removed files on server
+        REMOTE_HOST: "199.188.200.172" # Replace with your domain or server IP
+        REMOTE_USER: "techqclt" # Replace with your actual cPanel username
+        REMOTE_PORT: "21098" # Namecheap's custom SSH port
+        TARGET: "/home/techqclt/alignasya/" # Target directory on server
