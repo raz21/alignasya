@@ -17,6 +17,9 @@
     .topmenu{
     display: contents;
   }
+  .carouselbtn{
+    opacity: 0.1;
+  }
 .header{
     display:flex;
     justify-content:space-between;
