@@ -4,131 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AlignAsya PhysioTherapy & Wellness — Dr. Renu Saroj</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <title>AlignAsya PhysioTherapy & Wellness Center by Dr. Renu Saroj</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <link style="display:none" rel="canonical" href="https://alignasya.com/" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
   <meta name="description"
     content="AlignAsya — Physiotherapy & Wellness center at Mira Road, Mumbai. Led by Dr. Renu Saroj. Pain relief, sports rehab, post-op rehab, women's health & holistic wellness." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* small custom tweaks */
-    .hero-bg {
-      background: linear-gradient(90deg, rgba(16, 185, 129, 0.06), rgba(59, 130, 246, 0.04));
-    }
-
-    .aa-rounded-2xl {
-      border-radius: 0 3rem 0 3rem;
-    }
-
-    .aa-blue {
-      background-color: rgb(20 158 194);
-    }
-
-    .aa-green {
-      background-color: rgb(120 169 50);
-    }
-    .topmenu{
-    display: contents;
-  }
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:5px 20px;
-}
-
-.menu-toggle{
-    display:none;
-    font-size:24px;
-    cursor:pointer;
-    background:none;
-    border:none;
-}
-
-nav ul{
-    display:flex;
-    gap:25px;
-    list-style:none;
-}
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-.footer-top {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
-    gap: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid rgba(167, 196, 199, 0.15);
-}
-.footer-col h5 {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #9de13a;
-    margin-bottom: 15px;
-}
-.footer-col a {
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.2s;
-}
-
-@media(max-width:768px){
-
-.footer-top{
-        grid-template-columns: 1fr;
-    }
-.menu-toggle{
-    display:block;
-}
-.header{
-    padding:0 20px;
-    background-color: rgb(255 255 255 / 1) !important;
-}
-
-    .topmenu{
-    display: flex;
-  }
-nav{
-    display:none;
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#fff;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-nav.active{
-    display:block;
-}
-
-nav ul{
-    display:flex;
-    gap: 15px;
-    flex-direction:column;
-    padding:20px;
-    background-color: #31a9d3;
-    color:#fff;
-}
-
-nav ul li{
-    margin:5px 0;
-        display: flex;
-        font-size: medium;
-}
-nav ul li a{ 
-    width: 100%;
-}
-.logo img{
-    width: 11rem;
-    height: auto;
-  }
-}
-  </style>
 </head>
 
 <body class="antialiased text-gray-800 bg-white">
@@ -143,24 +26,22 @@ nav ul li a{
         <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#gallery" class="hover:text-blue-600">Gallery</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
-      <a href="#contact" class="hidden md:inline-block aa-blue text-white px-4 py-2 rounded-md text-sm">Book a
-        Consultation</a>
+        <a href="#contact" class="hidden md:inline-block aa-blue text-white px-4 py-2 rounded-md text-sm">Book a
+          Consultation</a>
       </nav>
     </div>
     <button class="menu-toggle" id="menuToggle">
-        ☰
-        <nav id="mobileMenu">
+      ☰
+      <nav id="mobileMenu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
     </button>
-
-    
   </header>
 
   <!-- Hero -->
@@ -343,18 +224,6 @@ nav ul li a{
         <img src="img/sh2.jpg" alt="Physiotherapy treatment" class="rounded-lg shadow">
         <img src="img/sh3.jpg" alt="Clinic interior" class="rounded-lg shadow">
       </div>
-
-      <!-- AI image prompts -->
-      <!-- <div class="mt-6 bg-gray-100 p-4 rounded-lg text-sm text-gray-700">
-        <strong>Suggested AI image prompts (copy to your preferred image generator):</strong>
-        <ul class="mt-2 list-disc ml-5">
-          <li>"Photorealistic physiotherapist (female Indian) gently mobilizing a middle-aged patient's shoulder in a bright, modern clinic, warm natural light, Mumbai skyline visible through window, professional, compassionate."</li>
-          <li>"Modern clinic interior with treatment table, soft natural light, calming plants and clean signage reading 'AlignAsya', high-resolution, inviting atmosphere."</li>
-          <li>"Sports physiotherapy session with young athlete doing rehabilitation exercises under supervision, clinical equipment, dynamic composition."</li>
-          <li>"Portrait of a professional female physiotherapist (Dr. Renu Saroj style) wearing clinic coat, friendly smile, shallow depth of field, editorial quality."</li>
-        </ul>
-      </div> -->
-
     </div>
   </section>
 
@@ -372,39 +241,86 @@ nav ul li a{
       </div>
     </div>
   </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16">
-    <div class="max-w-4xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="bg-slate-50 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-12">
+      <!-- Reach us -->
       <div>
-        <h3 class="text-2xl font-bold">Get in touch</h3>
+        <p class="font-heading font-semibold text-accent-600 uppercase tracking-wide text-sm">Reach Us</p>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-900 mt-2 text-balance">Visit Our
+          Physiotherapy Center in Mira Road, Mumbai</h2>
         <p class="text-gray-600 mt-2">Visit us at Mira Road, Mumbai or book an online consultation.</p>
-        <ul class="mt-4 text-sm text-gray-700">
-          <li>📍 Mira Road, Mumbai</li>
-          <li>📞 +91-93244 74278 </li>
-          <li>✉️ <a href="mailto:info@alignasya.in" class="text-blue-600">info@alignasya.in</a></li>
-        </ul>
-
-        <div class="mt-6">
-          <a href="mailto:info@alignasya.in?subject=Appointment%20Request%20-%20AlignAsya"
-            class="aa-green text-white px-4 py-2 rounded-md">Email to Book</a>
+        <address class="not-italic mt-6 space-y-4 text-sm">
+          <div class="flex gap-3">
+            <span class="text-brand-700 mt-0.5" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </span>
+            <p class="leading-relaxed">Shop no. 2, Excel ark, Ramdev Park, Queens Park, Mira Road East, Mira Bhayandar,
+              <br />Maharashtra 401107</p>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-brand-700 mt-0.5" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </span>
+            <p class="leading-relaxed">
+              <a href="tel:+919324474278" class="hover:text-brand-700">+91 93244 74278 </a>
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <span class="text-brand-700 mt-0.5" aria-hidden="true">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </span>
+            <p class="leading-relaxed">
+              <a href="mailto:info@alignasya.com?subject=Appointment%20Request%20-%20AlignAsya"
+                class="aa-green text-white px-4 py-2 rounded-md">Email to Book</a>
+              <!-- <a href="mailto:info@alignasya.com" class="hover:text-brand-700" target="_blank"
+                rel="noopener">info@alignasya.com
+              </a> -->
+            </p>
+          </div>
+        </address>
+        <div class="mt-6 rounded-2xl overflow-hidden shadow border border-slate-200">
+          <iframe title="Map showing directions to AlignAsya Physiotherapy Center, Mira Road, Thane, Mumbai"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.7039925368576!2d72.866762!3d19.2952346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b19c40d261b1%3A0x83c6264f6f030baf!2sAlignAsya%20%7C%20Physiotherapy%20and%20Wellness%20Center%20By%20Dr.Renu%20Saroj!5e0!3m2!1sen!2sin!4v1784462846641!5m2!1sen!2sin"
+            width="100%" height="260" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
-      <form class="p-2" action="mailto:info@alignasya.in" method="post" enctype="text/plain">
-        <label class="block text-sm font-medium">Name</label>
-        <input name="Name" class="w-full mt-1 p-2 border rounded" required>
-        <label class="block text-sm font-medium mt-3">Phone</label>
-        <input name="Phone" class="w-full mt-1 p-2 border rounded" required>
-        <label class="block text-sm font-medium mt-3">Message</label>
-        <textarea name="Message"
-          class="w-full mt-1 p-2 border rounded h-24">I'd like to book a consultation with Dr. Renu Saroj.</textarea>
-        <div class="mt-4">
-          <button type="submit" class="aa-blue text-white px-4 py-2 rounded">Send</button>
+      <!-- Enquiry form -->
+      <div>
+        <div class="bg-white rounded-3xl shadow-lg border border-slate-100 p-6 sm:p-8">
+          <h3 class="font-heading font-bold text-2xl text-brand-900">Book an online appointment</h3>
+          <p class="mt-2 text-sm">Fill in your details and we'll get back to you about time and date.</p>
+
+          <h3 class="text-2xl font-bold"></h3>
+          <form class="p-2" action="mailto:info@alignasya.com" method="post" enctype="text/plain">
+            <label class="block text-sm font-medium">Name</label>
+            <input name="Name" class="w-full mt-1 p-2 border rounded" required>
+            <label class="block text-sm font-medium mt-3">Phone</label>
+            <input name="Phone" class="w-full mt-1 p-2 border rounded" required>
+            <label class="block text-sm font-medium mt-3">Message</label>
+            <textarea name="Message"
+              class="w-full mt-1 p-2 border rounded h-24">I'd like to book a consultation with Dr. Renu Saroj.</textarea>
+            <button type="submit"
+              class="w-full rounded-full aa-blue text-white px-4 py-2 mt-4 text-white font-semibold py-3 transition">Send</button>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   </section>
+
 
   <!-- Footer -->
   <!-- <footer class="bg-gray-800 text-white py-8">
@@ -415,72 +331,139 @@ nav ul li a{
   </footer> -->
 
   <!-- ============ FOOTER ============ -->
-<footer class="bg-gray-800 text-white py-8">
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="logo" style="background: #fff; padding: 10px 22px; border-radius: 14px; display: inline-flex; box-shadow: 0 8px 24px -12px rgba(0,0,0,0.3);">
-          <img src="img/logo.jpg" alt="AlignAsya" style="height: 56px; width: auto; mix-blend-mode: multiply;" />
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"
+            style="background: #fff; padding: 10px 22px; border-radius: 14px; display: inline-flex; box-shadow: 0 8px 24px -12px rgba(0,0,0,0.3);">
+            <img src="img/logo.jpg" alt="AlignAsya" style="height: 56px; width: auto; mix-blend-mode: multiply;" />
+          </div>
+          <div style="height: 28px;"></div>
+          <p>A modern physiotherapy and wellness sanctuary led by Dr. Renu Saroj. Healing movement, restoring life — one
+            body at a time.</p>
         </div>
-        <div style="height: 28px;"></div>
-        <p>A modern physiotherapy and wellness sanctuary led by Dr. Renu Saroj. Healing movement, restoring life — one body at a time.</p>
-      </div>
 
-      <div class="footer-col">
-        <h5>Care</h5>
-        <ul>
-          <li><a href="#services">Orthopedics</a></li>
-          <li><a href="#services">Neurological</a></li>
-          <li><a href="#services">Sports Rehab</a></li>
-          <li><a href="#services">Geriatric</a></li>
-          <li><a href="#services">Pediatric</a></li>
-        </ul>
+        <div class="footer-col">
+          <h5>Care</h5>
+          <ul>
+            <li><a href="#services">Orthopedics</a></li>
+            <li><a href="#services">Neurological</a></li>
+            <li><a href="#services">Sports Rehab</a></li>
+            <li><a href="#services">Geriatric</a></li>
+            <li><a href="#services">Pediatric</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Modalities</h5>
+          <ul>
+            <li><a href="#services">Dry Needling</a></li>
+            <li><a href="#services">Kinesio Taping</a></li>
+            <li><a href="#services">Cupping</a></li>
+            <li><a href="#services">Manual Therapy</a></li>
+            <li><a href="#services">Women's Health</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Modalities</h5>
-        <ul>
-          <li><a href="#services">Dry Needling</a></li>
-          <li><a href="#services">Kinesio Taping</a></li>
-          <li><a href="#services">Cupping</a></li>
-          <li><a href="#services">Manual Therapy</a></li>
-          <li><a href="#services">Women's Health</a></li>
-        </ul>
+      <div class="footer-bottom pt-6">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs">© <span
+          id="year"></span> AlignAsya PhysioTherapy & Wellness Center — Led by Dr. Renu Saroj · Reg. PT/012470 · All
+            rights
+            reserved.</p>
+          <div class="text-xs">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/"
+                target="_blank">Instagram</a> • <a href="https://www.facebook.com/alignasya/"
+                target="_blank">Facebook</a> • <a href="https://www.youtube.com/@alignasya"
+                target="_blank">YouTube</a></span></div>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Follow</h5>
-        <ul>
-          <li><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a></li>
-          <li><a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a></li>
-          <li><a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></li>
-        </ul>
-      </div>      
-    </div>
-    <div class="footer-bottom pt-6">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-xs">© AlignAsya PhysioTherapy & Wellness Center — Dr. Renu Saroj  · Reg. PT/012470  · All rights reserved.</p>
-      <div class="text-xs">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a> • <a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a> • <a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></span></div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script>
     // Mobile menu simple toggle (enhancement)
     const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-menuToggle.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-});
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("active");
+    });
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
-  <!-- Notes for the owner (do not delete) -->
-  <!--
-    How to use:
-    1) Replace placeholder images with AI-generated images (high-res). Use the suggested prompts in the Gallery section.
-    2) Add real clinic phone number and Google Maps embed iframe where desired.
-    3) For hosting: upload this file to any static host (Netlify, Vercel, GitHub Pages) or to your clinic hosting.
-    4) If you want me to auto-generate 4 AI images and embed them here, tell me which style you prefer (photorealistic/illustration/editorial) and whether you want a portrait of Dr. Renu (note: you'll need to provide a reference photo to generate a likeness).
-  -->
+  <!-- Structured Data: Medical Organization / Local Business -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "AlignAsya Physiotherapy & Wellness Center",
+    "alternateName": "Physiotherapy & Wellness Clinic",
+  "@id": "https://alignasya.com",
+  "url": "https://alignasya.com",
+  "logo": "https://alignasya.com/images/logo.png",
+  "image": "https://alignasya.com/images/og-image.jpg",
+  "description": "AlignAsya — Physiotherapy & Wellness center at Mira Road, Mumbai. Led by Dr. Renu Saroj. Pain relief, sports rehab, post-op rehab, women's health & holistic wellness.",   
+  "telephone": "+91-9324474278",
+    "email": "info@alignasya.com",
+    "foundingDate": "2011",
+"address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mira Road",
+    "addressLocality": "Mumbai",
+    "addressRegion": "MH",
+    "postalCode": "401107",
+    "addressCountry": "IN"
+  },
+   "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "20:00"
+  },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.2952346",
+        "longitude": "72.866762"
+    },
+    "areaServed": [ "Mira Road", "Borivali", "Dahisar", "Thane"],
+    "openingHours": "Mo-Sa 09:00-20:00",
+    "sameAs": [
+      "https://www.instagram.com/tutorusha/",
+      "https://www.facebook.com/tutorusha/",
+      "https://www.youtube.com/@tutorusha",
+      "https://x.com/tutorusha"
+    ],
+    "keywords": [
+    "Physiotherapy center in mira road",
+    "best physiotherapist",
+    "physiotherapist in mumbai",
+    "physiotherapy clinic in mira road",
+    "best doctor in mira road",
+    "physiotherapist in borivali",
+    "Physiotherapy center in thane",
+    "Pediatric physiotherapy", 
+    "Neurological physiotherapy", 
+    "Sports Rehab", 
+    "Geriatric physiotherapy", 
+    "Women's Health", 
+    "Manual Therapy", 
+    "Dry Needling", 
+    "Kinesio Taping", 
+    "Cupping"
+  ],
+  "medicalSpecialty": [
+  "Physiotherapy", "Neurological", "Sports Rehab", "Geriatric", "Pediatric", "Women's Health", "Manual Therapy", "Dry Needling", "Kinesio Taping", "Cupping"
+  ]
+  }
+  </script>
 </body>
 
 </html>
