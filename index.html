@@ -44,12 +44,12 @@
   <!-- Navigation Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between topmenu">
-      <a href="#" class="flex items-center space-x-2 group">
+      <a href="#" class="flex items-center space-x-1 group">
         <!-- Logo Container: Swap src with your actual transparent logo image path -->
-        <img src="img/logoicon.png" alt="Alignasya Logo" class="h-10 w-auto object-contain"
+        <img src="img/logoicon.png" alt="Alignasya Logo" class="sm:h-8 lg:h-10 h-10 w-auto object-contain"
           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         <!-- Fallback typographic branding if image is missing locally -->
-        <div class="hidden text-2xl font-bold tracking-tight md:flex"><span class="text-[#007bb6]">Align</span><span
+        <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-[#007bb6]">Align</span><span
             class="text-[#8dc63f]">Asya</span></div>
       </a>
 
@@ -78,7 +78,7 @@
 
       <button class="menu-toggle" id="menuToggle">
         ☰
-        <nav id="mobileMenu">
+        <nav id="mobileMenu" class="font-medium">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>

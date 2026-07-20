@@ -35,6 +35,7 @@
     cursor:pointer;
     background:none;
     border:none;
+    color: #7cb335;
 }
 
 nav ul{
@@ -101,10 +102,10 @@ nav.active{
 
 nav ul{
     display:flex;
-    gap: 15px;
+    gap: 8px;
     flex-direction:column;
     padding:20px;
-    background-color: #31a9d3;
+    background-color: #007bb6;
     color:#fff;
 }
 
