@@ -12,11 +12,88 @@
   <meta name="description"
     content="AlignAsya — Physiotherapy & Wellness center at Mira Road, Mumbai. Led by Dr. Renu Saroj. Pain relief, sports rehab, post-op rehab, women's health & holistic wellness." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 500: '#3b82f6',
+              600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            },
+            accent: {
+              400: '#fbbf24', 500: '#f59e0b', 600: '#d97706'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body class="antialiased text-gray-800 bg-white">
+  <!-- Premium Top Announcement Bar -->
+  <div class="bg-[#007bb6] text-white text-xs sm:text-xs py-1 px-4 text-center font-medium tracking-wide">
+    🇮🇳 Leading Advanced Physiotherapy Care | Book Your Consultation Today
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between topmenu">
+      <a href="#" class="flex items-center space-x-2 group">
+        <!-- Logo Container: Swap src with your actual transparent logo image path -->
+        <img src="img/logoicon.png" alt="Alignasya Logo" class="h-10 w-auto object-contain"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <!-- Fallback typographic branding if image is missing locally -->
+        <div class="hidden text-2xl font-bold tracking-tight md:flex"><span class="text-[#007bb6]">Align</span><span
+            class="text-[#8dc63f]">Asya</span></div>
+      </a>
+
+      <div class="flex items-center space-x-4 hidden md:flex ">
+        <nav class="items-center space-x-8 text-sm font-semibold text-slate-600">
+          <a href="#about" class="hover:text-[#007bb6] transition-colors">About</a>
+          <a href="#services" class="hover:text-[#007bb6] transition-colors">Specialties</a>
+          <a href="#treatments" class="hover:text-[#007bb6] transition-colors">Treatments</a>
+          <a href="#contact" class="hover:text-[#007bb6] transition-colors">Contact Us</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center space-x-4 hidden md:flex ">
+        <a href="tel:+91" class="hidden sm:inline-flex text-sm font-bold text-[#007bb6] items-center space-x-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span>Emergency Call</span>
+        </a>
+        <a href="#contact"
+          class="bg-[#8dc63f] hover:bg-[#7cb335] text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+          Book Appointment
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+        <nav id="mobileMenu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="tel:+919324474278">Emergency Call</a></li>
+            <li><a href="#contact">Appointment</a></li>
+          </ul>
+        </nav>
+      </button>
+    </div>
+
+  </header>
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-md header">
+  <!-- <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-md header">
     <div class="max-w-6xl mx-auto px-6 py-2 topmenu">
       <a href="#home" class="flex items-center gap-3 logo">
         <img src="img/logo.jpg" alt=" " class="w-60 h-auto object-cover">
@@ -42,20 +119,35 @@
         </ul>
       </nav>
     </button>
-  </header>
+  </header> -->
 
   <!-- Hero -->
   <section id="home" class="hero-bg py-14">
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-extrabold">Align your body.<br> Restore your life.</h2>
+      <div class="order-2 lg:order-1">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+          Restore Your Mobility <br><span class="text-[#007bb6]">Align Your Life</span>
+        </h1>
+        <!-- <h2 class="text-3xl md:text-4xl font-extrabold">Align your body.<br> Restore your life.</h2> -->
         <p class="mt-4 text-gray-600 max-w-xl">Welcome to <strong>AlignAsya</strong> — a modern physiotherapy and
-          wellness centre at Mira Road, Mumbai led by <strong>Dr. Renu Saroj</strong>. We provide personalised
+          wellness centre led by <strong>Dr. Renu Saroj</strong>. India's elite physiotherapy care featuring
+          cutting-edge laser modalities, specialized manual adjustments, and personalized kinetic rehabilitation
+          programs. We provide personalised
           rehabilitation, pain management, sports therapy and holistic wellness programs tailored to your needs. </p>
-        <div class="mt-6 flex gap-3">
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="#contact"
+            class="w-full sm:w-auto bg-[#007bb6] hover:bg-[#00699b] text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-600/10 transition-all">
+            Consult Our Specialists
+          </a>
+          <a href="#services"
+            class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-700 text-center font-bold px-8 py-4 rounded-xl transition-all">
+            Explore Treatments
+          </a>
+        </div>
+        <!-- <div class="mt-6 flex gap-3">
           <a href="#contact" class="aa-green text-white px-4 py-2 rounded-md shadow">Book Online</a>
           <a href="#services" class="border border-gray-300 px-4 py-2 rounded-md">Our Services</a>
-        </div>
+        </div> -->
         <ul class="mt-6 grid grid-cols-2 gap-2 text-sm text-gray-600">
           <li>✓ Personalized care plans</li>
           <li>✓ Evidence-based treatments</li>
@@ -67,30 +159,30 @@
       <!-- <div class="w-full aa-rounded-2xl overflow-hidden shadow-lg">
         <img src="img/home1.jpg" alt="Physiotherapy session in clinic - hero" class="w-full h-auto object-cover">
       </div> -->
-      
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 order-1 lg:order-2">
         <div class="relative overflow-hidden " role="region" aria-roledescription="carousel"
           aria-label="Classroom photo gallery">
           <div id="carouselTrack" class="flex transition-transform duration-500 ease-out">
-            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide" aria-label="1 of 6">
-              <img src="img/slide1.jpg"
-                alt="Personalized care at AlignAsya"
-                class="w-full h-auto object-cover" loading="lazy" />
+            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide"
+              aria-label="1 of 6">
+              <img src="img/slide1.jpg" alt="Personalized care at AlignAsya" class="w-full h-auto object-cover"
+                loading="lazy" />
             </div>
-            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide" aria-label="2 of 6">
-              <img src="img/slide2.jpg"
-                alt="Physiotherapy session in clinic"
-                class="w-full h-auto object-cover" loading="lazy" />
+            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide"
+              aria-label="2 of 6">
+              <img src="img/slide2.jpg" alt="Physiotherapy session in clinic" class="w-full h-auto object-cover"
+                loading="lazy" />
             </div>
-            <div class="min-w-full  aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide" aria-label="3 of 6">
-              <img src="img/slide3.jpg"
-                alt="Women's health & antenatal rehab"
-                class="w-full h-auto object-cover" loading="lazy" />
+            <div class="min-w-full  aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide"
+              aria-label="3 of 6">
+              <img src="img/slide3.jpg" alt="Women's health & antenatal rehab" class="w-full h-auto object-cover"
+                loading="lazy" />
             </div>
-            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide" aria-label="4 of 6">
-              <img src="img/slide4.jpg"
-                alt="Holistic wellness program"
-                class="w-full h-auto object-cover" loading="lazy" />
+            <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide"
+              aria-label="4 of 6">
+              <img src="img/slide4.jpg" alt="Holistic wellness program" class="w-full h-auto object-cover"
+                loading="lazy" />
             </div>
             <!-- <div class="min-w-full aa-rounded-2xl overflow-hidden shadow-lg" role="group" aria-roledescription="slide" aria-label="5 of 6">
               <img src="img/sh7.jpg"
@@ -125,17 +217,252 @@
     </div>
   </section>
 
+
+  <!-- Core Specialties (SEO Silhouette Layer) -->
+  <section id="services" class="py-20 lg:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-6xl mx-auto space-y-4 mb-16">
+        <h2 class="text-xs font-bold text-[#007bb6] tracking-widest uppercase">Our Clinical Focus</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">World-Class Rehabilitation
+          Specialties</p>
+        <div class="h-1 w-20 bg-[#8dc63f] mx-auto rounded-full"></div>
+
+        <p class="text-gray-600 mt-2 text-sm">Comprehensive, compassionate physiotherapy & wellness services.</p>
+        <p class="text-gray-600 mt-2 text-sm">At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide
+          comprehensive,
+          evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our
+          expert
+          physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through
+          personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic
+          exercises,
+          electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age
+          groups.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-4">
+        <!-- Card 1 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/sportsInjury.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Sports
+                Injury</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="" onclick="showView('details')">Sports Injury Management</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Fast-tracked kinetic analysis, athletic conditioning,
+                dynamic muscle retraining, and joint stabilization to get you back on the field safely.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" onclick="showView('details')" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/orthospine.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Orthopedic</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Orthopedic Spine & Joint</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Advanced structural solutions tailored for chronic sciatica,
+            lumbar strains, cervical spondylosis, knee osteoarthritis, and frozen shoulders.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 3 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/neurological.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Neurological</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Neurological Rehabilitation</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Specialized neuroplasticity programs for post-stroke
+            recovery, Parkinson's disease, multiple sclerosis, and peripheral neuropathies.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 4 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/musculoskeletal.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Musculoskeletal</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Musculoskeletal Physiotherapy</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">We specialize in the diagnosis and treatment of muscle, joint, and spine-related conditions.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 5 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/antenatal.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Antenatal Care</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Women's Health & Antenatal Care</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">We provide specialized physiotherapy care tailored to women's unique health needs across different life stages. Our antenatal and postnatal programs focus on
+            comfort, strength, and recovery.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 6 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/geriatric.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Geriatric</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Geriatric Physiotherapy</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Our geriatric physiotherapy services aim to promote active
+            aging, independence, and improved balance in older adults. We focus on safe, gentle, and effective therapies
+            to enhance mobility and confidence.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 7 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/pediatric.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Pediatric</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Pediatric Physiotherapy</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">We offer compassionate and specialized physiotherapy care
+            for infants and children to support healthy growth and development. Our child-friendly approach ensures
+            comfort and effective outcomes.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+        
+        <!-- Card 8 -->
+        <article
+          class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          <div>
+            <div class="aspect-video">
+              <img src="img/preventive.jpg" alt="Physics Formula" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <span
+                class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">Preventive Care</span>
+              <h3
+                class="mt-3 font-heading font-semibold text-lg text-brand-900 line-clamp-2 hover:text-indigo-600 transition">
+                <a href="">Wellness & Preventive Care</a>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">Our programs are designed to help
+            individuals maintain optimal physical health, prevent injuries, and enhance overall well-being through
+            proactive physiotherapy.</p>
+            </div>
+          </div>
+          <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span></span>
+            <a href="" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+              More
+              &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
   <!-- Services -->
-  <section id="services" class="py-24">
+  <!-- <section id="services" class="py-24">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-2xl font-bold">Our Services</h3>
       <p class="text-gray-600 mt-2">Comprehensive, compassionate physiotherapy & wellness services.</p>
       <p class="text-gray-600 mt-2">At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide comprehensive,
         evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our expert
         physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through
-        personalized treatment plans.</p>
-
-      <p class="text-gray-600 mt-2">We offer a wide range of services including manual therapy, therapeutic exercises,
+        personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic exercises,
         electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age groups.
       </p>
 
@@ -227,12 +554,12 @@
         </article>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- About -->
   <section id="about" class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-      <div class="md:col-span-2">
+      <div class="md:col-span-2 order-2 lg:order-1">
         <h3 class="text-2xl font-bold">About Dr. Renu Saroj</h3>
         <p class="text-gray-600 mt-3">Dr. Renu Saroj is a dedicated physiotherapist with extensive experience in
           musculoskeletal and sports rehabilitation. Her approach is patient-centred, evidence-based and focused on
@@ -256,7 +583,7 @@
         </div>
       </div>
 
-      <div class="rounded-xl overflow-hidden">
+      <div class="rounded-xl overflow-hidden order-1 lg:order-2">
         <!-- Replace this with a portrait AI image of Dr. Renu Saroj or clinic photo -->
         <img src="img/physician.svg" alt="Dr. Renu Saroj portrait" class="w-full h-auto object-cover">
       </div>
@@ -296,6 +623,103 @@
       </div>
     </div>
   </section>
+
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="py-24 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center space-y-3 mb-16">
+        <span
+          class="text-xs font-bold text-[#007bb6] tracking-widest uppercase bg-blue-50 px-3 py-1 rounded-full">Patient
+          Knowledge Base</span>
+        <h2 class="text-3xl font-black text-slate-900 tracking-tight">Physiotherapy Treatment FAQ & Expert Insights</h2>
+        <p class="text-xs text-slate-500 max-w-md mx-auto">Get answers regarding appointment bookings, clinical
+          modalities, home care services, and pricing from Alignasya clinicians.</p>
+        <div class="h-1 w-12 bg-[#8dc63f] mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Structured Data Contextual Wrapper -->
+      <div class="space-y-4">
+
+        <!-- FAQ Item 1: High Intent Local Search Term -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden transition-all shadow-xs">
+          <button
+            class="w-full px-6 py-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center hover:bg-slate-50/80 transition-colors"
+            onclick="toggleFaq(this)">
+            <span>Do I need a doctor's referral to visit a physiotherapist near me at Alignasya?</span>
+            <span class="text-slate-400 font-normal text-xl transition-transform duration-200 shrink-0 ml-4">+</span>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50/50">
+            <p class="p-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+              No, a doctor’s referral is not mandatory. You can walk straight into our <strong>best physiotherapy
+                center</strong> or book a direct slot online. Our certified physical therapists conduct complete
+              structural evaluations, diagnose the root kinetic problem, and build custom programs for acute or chronic
+              alignment issues.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2: Competitive Keyword (Physio vs Chiro) -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden transition-all shadow-xs">
+          <button
+            class="w-full px-6 py-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center hover:bg-slate-50/80 transition-colors"
+            onclick="toggleFaq(this)">
+            <span>What is the difference between a chiropractor and a physiotherapist for back pain?</span>
+            <span class="text-slate-400 font-normal text-xl transition-transform duration-200 shrink-0 ml-4">+</span>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50/50">
+            <p class="p-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+              While a chiropractor focuses primarily on hard joint manipulations and spinal adjustments, a
+              <strong>sports physiotherapist</strong> or clinical therapist at Alignasya takes a comprehensive approach.
+              We combine gentle joint mobilizations with deep muscle retraining, posture correction, and advanced
+              electrotherapy (like IFT or Class IV Lasers) to prevent back pain or sciatica from returning.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3: Pricing & Commercial Intent -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden transition-all shadow-xs">
+          <button
+            class="w-full px-6 py-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center hover:bg-slate-50/80 transition-colors"
+            onclick="toggleFaq(this)">
+            <span>What are the standard physiotherapy home visit charges in India?</span>
+            <span class="text-slate-400 font-normal text-xl transition-transform duration-200 shrink-0 ml-4">+</span>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50/50">
+            <p class="p-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+              Our standard <strong>physiotherapy home visit charges</strong> vary depending on the severity of the
+              medical condition and required equipment. Domiciliary sessions for critical post-operative recovery,
+              stroke rehabilitation, or paralysis management typically range between ₹800 to ₹2,500 per session across
+              core metros. Contact our intake desk to get an exact, transparent quote.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4: Treatment Specific Target Keyword -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden transition-all shadow-xs">
+          <button
+            class="w-full px-6 py-5 text-left font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center hover:bg-slate-50/80 transition-colors"
+            onclick="toggleFaq(this)">
+            <span>How can physical therapy help avoid surgical interventions for knee pain or disc slips?</span>
+            <span class="text-slate-400 font-normal text-xl transition-transform duration-200 shrink-0 ml-4">+</span>
+          </button>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-50/50">
+            <p class="p-6 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+              Our advanced <strong>orthopedic physiotherapy treatments</strong> use mechanical decompression, targeted
+              core strengthening, and tissue-regeneration modalities to relieve deep nerve pressure. For conditions like
+              knee osteoarthritis or lumbar slip discs, our targeted clinical therapies strengthen surrounding
+              stabilizing muscle groups, effectively delaying or completely eliminating the need for surgical
+              procedures.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- ============ CONTACT ============ -->
   <section id="contact" class="bg-slate-50 py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-12">
@@ -316,7 +740,8 @@
               </svg>
             </span>
             <p class="leading-relaxed">Shop no. 2, Excel ark, Ramdev Park, Queens Park, Mira Road East, Mira Bhayandar,
-              <br />Maharashtra 401107</p>
+              <br />Maharashtra 401107
+            </p>
           </div>
           <div class="flex gap-3">
             <span class="text-brand-700 mt-0.5" aria-hidden="true">
@@ -325,7 +750,7 @@
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </span>
-            <p class="leading-relaxed">              
+            <p class="leading-relaxed">
               <a href="tel:+919324474278" class="hover:text-brand-700">+91 93244 74278 </a>
             </p>
           </div>
@@ -430,8 +855,8 @@
       </div>
       <div class="footer-bottom pt-6">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-xs">© <span
-          id="year"></span> AlignAsya PhysioTherapy & Wellness Center — Led by Dr. Renu Saroj · Reg. PT/012470 · All
+          <p class="text-xs">© <span id="year"></span> AlignAsya PhysioTherapy & Wellness Center — Led by Dr. Renu Saroj
+            · Reg. PT/012470 · All
             rights
             reserved.</p>
           <div class="text-xs">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/"
@@ -451,7 +876,7 @@
       mobileMenu.classList.toggle("active");
     });
 
-    
+
     // Carousel
     (function () {
       var track = document.getElementById('carouselTrack');
@@ -554,6 +979,36 @@
   "Physiotherapy", "Neurological", "Sports Rehab", "Geriatric", "Pediatric", "Women's Health", "Manual Therapy", "Dry Needling", "Kinesio Taping", "Cupping"
   ]
   }
+  </script>
+  <script>
+    function toggleFaq(button) {
+      // Find the immediate next element sibling which holds the text content
+      const content = button.nextElementSibling;
+      // Select the icon span inside the button (+ / −)
+      const icon = button.querySelector('span:last-child');
+
+      // 1. Clean Loop: Automatically collapse any other open accordion panel
+      document.querySelectorAll('#faq .overflow-hidden').forEach(el => {
+        if (el !== content && el.style.maxHeight !== '0px' && el.style.maxHeight !== '') {
+          el.style.maxHeight = '0px';
+          // Reset the icon of the closed accordion back to a plus sign
+          const parentButton = el.previousElementSibling;
+          if (parentButton) {
+            const associatedIcon = parentButton.querySelector('span:last-child');
+            if (associatedIcon) associatedIcon.innerText = '+';
+          }
+        }
+      });
+
+      // 2. Toggle State Logic: Compute and set dynamic scrollHeight
+      if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.innerText = '−';
+      } else {
+        content.style.maxHeight = '0px';
+        icon.innerText = '+';
+      }
+    }
   </script>
 </body>
 
