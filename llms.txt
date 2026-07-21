@@ -1,0 +1,13 @@
+# alignasya.com
+
+> AlignAsya is a professional single-page website offering services and solutions.
+
+## Navigation
+- [Home](https://alignasya.com): Main hub showcasing our Modern technique of physiotherapy, family testimonials, and clinic overview.
+
+## Core Content
+This is a single-page HTML website. All critical business information, including the company overview, services offered, team details, and contact information, is contained entirely on the primary homepage.
+
+## Crawler Instructions
+User-agent: *
+Allow: /
