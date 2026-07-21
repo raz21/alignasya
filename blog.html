@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | AlignAsya Physiotherapy & Wellness Center</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <link style="display:none" rel="canonical" href="https://alignasya.com/" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        teal: '#0799b2',
+        tealDark: '#087d91',
+        leaf: '#83bf35',
+        ink: '#173f4a',
+        mist: '#f3faf9'
+      },
+      fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-white text-ink antialiased">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between">
+    <!-- <a href="index.html" class="flex items-center gap-3">
+      <img src="img/logo.jpg" alt="AlignAsya Physiotherapy and Wellness Center" class="w-52 sm:w-64 h-auto">
+    </a> -->
+    <a href="#" class="flex items-center space-x-1 group">
+        <!-- Logo Container: Swap src with your actual transparent logo image path -->
+        <img src="img/logoicon.png" alt="Alignasya Logo" class="sm:h-8 lg:h-10 h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <!-- Fallback typographic branding if image is missing locally -->
+        <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-tealDark">Align</span><span
+            class="text-teal">Asya</span></div>
+      </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <a href="index.html" class="hover:text-teal transition">Home</a>
+      <a href="index.html#services" class="hover:text-teal transition">Specialties</a>
+      <a href="index.html#about" class="hover:text-teal transition">About</a>
+      <a href="" class="text-teal">Blog</a>
+      <a href="index.html#contact" class="hover:text-teal transition">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="hidden sm:inline-flex bg-teal hover:bg-tealDark text-white px-5 py-3 rounded-full font-semibold transition">Book an Appointment</a>
+    <button id="menuBtn" class="md:hidden p-2" aria-label="Open menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 px-5 py-4 space-y-3">
+    <a href="index.html" class="block">Home</a>
+    <a href="index.html#services" class="block">Specialties</a>
+    <a href="index.html#about" class="block">About</a>
+    <a href="" class="block text-teal font-semibold">Blog</a>
+    <a href="index.html#contact" class="block">Contact</a>
+  </div>
+</header>
+
+<main>
+<section class="bg-mist">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-flex px-4 py-2 rounded-full bg-white text-teal font-bold text-sm shadow-sm">The AlignAsya Wellness Journal</span>
+      <h1 class="mt-6 text-5xl lg:text-6xl font-bold tracking-tight leading-tight">Move better.<br><span class="text-teal">Live stronger.</span></h1>
+      <p class="mt-6 text-lg text-slate-600 max-w-xl leading-8">Practical physiotherapy insights, movement tips, recovery guidance and everyday wellness ideas to help you feel your best.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#articles" class="bg-teal text-white px-6 py-3 rounded-full font-semibold hover:bg-tealDark transition">Explore Articles</a>
+        <a href="contact.html" class="border border-teal text-teal px-6 py-3 rounded-full font-semibold hover:bg-white transition">Talk to Our Team</a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -inset-4 bg-leaf/15 rounded-[2rem] rotate-3"></div>
+      <img src="img/geriatric2.jpg" alt="Physiotherapist helping a client with movement" class="relative rounded-[2rem] w-full h-[480px] object-cover shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<section id="articles" class="max-w-7xl mx-auto px-5 lg:px-8 py-20">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-10">
+    <div><p class="text-teal font-bold uppercase tracking-widest text-sm">Latest from AlignAsya</p><h2 class="mt-2 text-4xl font-bold">Helpful ideas for healthier living</h2></div>
+    <div class="flex flex-wrap gap-2">
+      <button class="filter px-4 py-2 rounded-full bg-teal text-white text-sm font-semibold" data-cat="all">All</button>
+      <button class="filter px-4 py-2 rounded-full bg-slate-100 text-sm font-semibold" data-cat="physio">Physiotherapy</button>
+      <button class="filter px-4 py-2 rounded-full bg-slate-100 text-sm font-semibold" data-cat="wellness">Wellness</button>
+      <button class="filter px-4 py-2 rounded-full bg-slate-100 text-sm font-semibold" data-cat="recovery">Recovery</button>
+    </div>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <article class="post group rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-sm hover:shadow-xl transition" data-cat="physio">
+      <img src="img/slide4.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500" alt="Back pain physiotherapy">
+      <div class="p-7"><span class="text-teal text-sm font-bold">PHYSIOTHERAPY · 6 MIN READ</span><h3 class="mt-3 text-2xl font-bold">Why Your Back Hurts — and What You Can Do About It</h3><p class="mt-3 text-slate-600">Understand common causes of back pain and how smart movement can support long-term recovery.</p><a href="blog-detail.html" class="inline-block mt-5 font-bold text-teal">Read article →</a></div>
+    </article>
+    <article class="post group rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-sm hover:shadow-xl transition" data-cat="wellness">
+      <img src="img/home.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500" alt="Woman practicing gentle wellness movement">
+      <div class="p-7"><span class="text-teal text-sm font-bold">WELLNESS · 5 MIN READ</span><h3 class="mt-3 text-2xl font-bold">Small Daily Habits That Keep Your Body Moving Well</h3><p class="mt-3 text-slate-600">Simple routines for posture, mobility, breathing and energy that fit into a busy day.</p><a href="blog-detail.html" class="inline-block mt-5 font-bold text-teal">Read article →</a></div>
+    </article>
+    <article class="post group rounded-3xl overflow-hidden bg-white border border-slate-100 shadow-sm hover:shadow-xl transition" data-cat="recovery">
+      <img src="img/slide3.jpg" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500" alt="Exercise and rehabilitation">
+      <div class="p-7"><span class="text-teal text-sm font-bold">RECOVERY · 7 MIN READ</span><h3 class="mt-3 text-2xl font-bold">Returning to Exercise After an Injury: A Smarter Roadmap</h3><p class="mt-3 text-slate-600">How to rebuild strength and confidence while respecting your body's recovery timeline.</p><a href="blog-detail.html" class="inline-block mt-5 font-bold text-teal">Read article →</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="bg-ink text-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div><h2 class="text-3xl font-bold">Ready to feel more like yourself?</h2><p class="mt-2 text-white/70">Let's create a movement and wellness plan that fits your life.</p></div>
+    <a href="index.html#contact" class="bg-leaf text-white px-7 py-4 rounded-full font-bold hover:opacity-90">Book Your Appointment</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-slate-50">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-10 flex flex-col md:flex-row justify-between gap-5 text-sm text-slate-600">
+    <p>© 2026 AlignAsya Physiotherapy and Wellness Center. All rights reserved.</p>
+    <p>Move well · Recover well · Live well</p>
+  </div>
+</footer>
+<script>
+document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.toggle('hidden');
+document.querySelectorAll('.filter').forEach(btn => btn.onclick = () => {
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('bg-teal','text-white'));
+  btn.classList.add('bg-teal','text-white');
+  const cat = btn.dataset.cat;
+  document.querySelectorAll('.post').forEach(p => p.classList.toggle('hidden', cat !== 'all' && p.dataset.cat !== cat));
+});
+</script>
+</body>
+</html>
