@@ -40,5 +40,9 @@ As an ANC-PNC certified coach and Women's Health specialist, Dr. Renu offers str
 Maharashtra 401107
 - **Working Hours:** 10:00 AM – 1:00 PM | 5:00 PM – 9:00 PM
 
+## 6. Crawler Instructions
+User-agent: *
+Allow: /
+
 ---
 *Metadata: Last updated July 2026. For the live interactive experience, visit https://alignasya.com*
