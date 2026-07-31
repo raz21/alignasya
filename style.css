@@ -1,4 +1,21 @@
-/* small custom tweaks */
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,700|Source+Sans+Pro:400,600");
+body {
+  line-height: 1.4;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #848484;
+  color: #212121;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
     .hero-bg {
       background: linear-gradient(90deg, rgba(16, 185, 129, 0.06), rgba(59, 130, 246, 0.04));
     }
