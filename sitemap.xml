@@ -5,5 +5,65 @@
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>  
+  <url>
+    <loc>https://alignasya.com/blog.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url> 
+  <url>
+    <loc>https://alignasya.com/blog-back-pain.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url> 
+  <url>
+    <loc>https://alignasya.com/blog-daily-habits.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url> 
+  <url>
+    <loc>https://alignasya.com/blog-returning-to-exercise.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/geriatric-physiotherapy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/musculoskeletal-physiotherapy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/neurological-rehabilitation.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/orthopedic-spine-joint.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/pediatric-physiotherapy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/sports-injury-management.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/wellness-preventive-care.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/womens-health-antenatal-care.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8 </priority>
   </url>
 </urlset>
