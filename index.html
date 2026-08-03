@@ -19,15 +19,14 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alignasya.com/" />
-  <meta property="og:title"
-    content="AlignAsya | Best Physiotherapy & Wellness Center in Mira Road, Mumbai" />
+  <meta property="og:title" content="AlignAsya | Best Physiotherapy & Wellness Center in Mira Road, Mumbai" />
   <meta property="og:description"
     content="AlignAsya is a top rehabilitation centre and physiotherapy hospital in Mumbai offering advanced care for post stroke, injury, pain, and neurological recovery." />
   <meta property="og:image" content="https://alignasya.com/img/og-image.jpg" />
   <meta property="og:locale" content="en_IN" />
   <meta property="og:site_name" content="AlignAsya - Physiotherapy and Wellness Center" />
 
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AlignAsya | Best Physiotherapy & Wellness Center in Mira Road, Mumbai" />
@@ -35,6 +34,7 @@
     content="AlignAsya — Our expert physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through personalized treatment plans." />
   <meta name="twitter:image" content="https://alignasya.com/img/og-image.jpg" />
 
+  <script src="https://cloudflare.com"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -50,13 +50,24 @@
             }
           },
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['Source Sans Pro','sans-serif','Inter', 'ui-sans-serif', 'system-ui'],
             heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif']
           }
         }
       }
     }
   </script>
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -80,24 +91,25 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between topmenu">
       <a href="index.html" class="flex items-center space-x-1 group">
         <!-- Logo Container: Swap src with your actual transparent logo image path -->
-        <img src="img/logoicon.png" alt="Alignasya Logo" class="sm:h-8 lg:h-10 h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <img src="img/logoicon.png" alt="Alignasya Logo" class="sm:h-8 lg:h-10 h-10 w-auto object-contain"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         <!-- Fallback typographic branding if image is missing locally -->
-        <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-[#007bb6]">Align</span><span
-            class="text-[#8dc63f]">Asya</span></div>
+        <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-[#007bb6]">Align</span><span class="text-lime-600">Asya</span></div>
       </a>
 
       <div class="flex items-center space-x-4 hidden md:flex ">
         <nav class="items-center space-x-8 text-sm font-semibold text-slate-600">
           <a href="#about" class="hover:text-[#007bb6] transition-colors">About</a>
           <a href="#services" class="hover:text-[#007bb6] transition-colors">Specialties</a>
-          <a href="#treatments" class="hover:text-[#007bb6] transition-colors">Treatments</a>
+          <!-- <a href="#treatments" class="hover:text-[#007bb6] transition-colors">Treatments</a> -->
           <a href="#contact" class="hover:text-[#007bb6] transition-colors">Contact Us</a>
           <a href="blog.html" class="hover:text-[#007bb6] transition-colors">Blog</a>
         </nav>
       </div>
 
       <div class="flex items-center space-x-4 hidden md:flex ">
-        <a href="tel:+919324474278" class="hidden sm:inline-flex text-sm font-bold text-[#007bb6] items-center space-x-1">
+        <a href="tel:+919324474278"
+          class="hidden sm:inline-flex text-sm font-bold text-[#007bb6] items-center space-x-1">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -105,7 +117,7 @@
           <span>Emergency Call</span>
         </a>
         <a href="#contact"
-          class="bg-[#8dc63f] hover:bg-[#7cb335] text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+          class="bg-lime-600 hover:bg-[#7cb335] text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
           Book Appointment
         </a>
       </div>
@@ -127,40 +139,14 @@
 
   </header>
   <!-- Header -->
-  <!-- <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-md header">
-    <div class="max-w-6xl mx-auto px-6 py-2 topmenu">
-      <a href="#home" class="flex items-center gap-3 logo">
-        <img src="img/logo.jpg" alt=" " class="w-60 h-auto object-cover">
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#about" class="hover:text-blue-600">About</a>
-        <a href="#gallery" class="hover:text-blue-600">Gallery</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
-        <a href="#contact" class="hidden md:inline-block aa-blue text-white px-4 py-2 rounded-md text-sm">Book a
-          Consultation</a>
-      </nav>
-    </div>
-    <button class="menu-toggle" id="menuToggle">
-      ☰
-      <nav id="mobileMenu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </button>
-  </header> -->
 
   <!-- Hero -->
   <section id="home" class="hero-bg py-14">
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div class="order-2 lg:order-1">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-          Physiotherapy & Wellness Center in Mira Road <br><span class="text-[#007bb6]">Restore Your Mobility, Align Your Life</span>
+          Physiotherapy & Wellness Center in Mira Road <br><span class="text-[#007bb6]">Restore Your Mobility, Align
+            Your Life</span>
         </h1>
         <p class="mt-4 text-gray-600 max-w-xl">Welcome to <strong>AlignAsya</strong> — a modern physiotherapy and
           wellness centre led by <strong>Dr. Renu Saroj</strong>. India's elite physiotherapy care featuring
@@ -188,7 +174,7 @@
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 order-1 lg:order-2">
         <div class="relative overflow-hidden aa-rounded-2xl  shadow-lg" role="region" aria-roledescription="carousel"
           aria-label="Classroom photo gallery">
-          <div id="carouselTrack" class="flex transition-transform duration-500 ease-out">
+          <div id="heroCarouselTrack" class="flex transition-transform duration-500 ease-out">
             <div class="min-w-full  overflow-hidden" role="group" aria-roledescription="slide" aria-label="1 of 6">
               <img src="img/og-image.jpg" alt="Personalized care at AlignAsya" class="w-full h-auto object-cover"
                 loading="lazy" />
@@ -210,57 +196,76 @@
             </div>
           </div>
 
-          <button id="prevBtn"
+          <button id="heroPrevBtn"
             class="absolute left-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white text-brand-800 flex items-center justify-center shadow carouselbtn"
             aria-label="Previous slide">
             <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <button id="nextBtn"
+          <button id="heroNextBtn"
             class="absolute right-3 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/90 hover:bg-white text-brand-800 flex items-center justify-center shadow carouselbtn"
             aria-label="Next slide">
             <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          <div id="dots" class="absolute bottom-4 inset-x-0 flex justify-center gap-2 carouselbtn" role="tablist"
+          <div id="heroDots" class="absolute bottom-4 inset-x-0 flex justify-center gap-2 carouselbtn" role="tablist"
             aria-label="Choose slide"></div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- Core Specialties (SEO Silhouette Layer) -->
+  <!-- Core Specialties -->
   <section id="services" class="py-20 lg:py-28 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-6xl mx-auto space-y-4 mb-16">
-        <h2 class="text-xs font-bold text-[#007bb6] tracking-widest uppercase">Our Clinical Focus</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">World-Class Rehabilitation
-          Specialties</p>
-        <div class="h-1 w-20 bg-[#8dc63f] mx-auto rounded-full"></div>
+    <div id="carouselSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4">
+        <div class="max-w-6xl mx-auto space-y-4 mb-5">
+          <h2 class="text-xs font-bold text-[#007bb6] tracking-widest uppercase">Our Clinical Focus</h2>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">World-Class Rehabilitation
+            Specialties</p>
+          <div class="h-1 w-20 bg-lime-600 rounded-full"></div>
 
-        <p class="text-gray-600 mt-2 text-sm">Comprehensive, compassionate physiotherapy & wellness services.</p>
-        <p class="text-gray-600 mt-2 text-sm">At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide
-          comprehensive,
-          evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our
-          expert
-          physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through
-          personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic
-          exercises,
-          electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age
-          groups.
-        </p>
+          <p class="text-gray-600 mt-2 text-sm">Comprehensive, compassionate physiotherapy & wellness services.</p>
+          <p class="text-gray-600 mt-2 text-sm">At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide
+            comprehensive,
+            evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our
+            expert
+            physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through
+            personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic
+            exercises,
+            electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age
+            groups.
+          </p>
+        </div>
+
+        <div class="flex space-x-3">
+          <button id="specialtiesPrevBtn"
+            class="p-3 rounded-full bg-white border border-gray-200 shadow-sm text-gray-700 hover:bg-gray-50 active:scale-95 transition-all cursor-pointer"
+            aria-label="Previous specialties">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button id="specialtiesNextBtn"
+            class="p-3 rounded-full bg-white border border-gray-200 shadow-sm text-gray-700 hover:bg-gray-50 active:scale-95 transition-all cursor-pointer"
+            aria-label="Next specialties">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
-
-      <div class="grid md:grid-cols-4 gap-4">
+      <div id="specialtiesCarouselTrack"
+        class="flex gap-4 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing scroll-smooth py-4 snap-x snap-mandatory">
         <!-- Card 1 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/sportsInjury.jpg" alt="Physiotherapist assessing a sports injury at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/sportsInjury.jpg" alt="Physiotherapist assessing a sports injury at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -284,10 +289,12 @@
 
         <!-- Card 2 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/orthospine.jpg" alt="Physiotherapist treating a patient's spine and joint condition at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/orthospine.jpg"
+                alt="Physiotherapist treating a patient's spine and joint condition at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -311,10 +318,12 @@
 
         <!-- Card 3 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/neurological.jpg" alt="Physiotherapist guiding a patient through neurological rehabilitation at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/neurological.jpg"
+                alt="Physiotherapist guiding a patient through neurological rehabilitation at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -337,10 +346,12 @@
 
         <!-- Card 4 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/musculoskeletal.jpg" alt="Physiotherapist assessing a patient's muscle and joint mobility at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/musculoskeletal.jpg"
+                alt="Physiotherapist assessing a patient's muscle and joint mobility at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -355,7 +366,8 @@
           </div>
           <div class="p-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
             <span></span>
-            <a href="musculoskeletal-physiotherapy.html" class="font-semibold text-indigo-600 hover:text-indigo-700">Read
+            <a href="musculoskeletal-physiotherapy.html"
+              class="font-semibold text-indigo-600 hover:text-indigo-700">Read
               More
               &rarr;</a>
           </div>
@@ -363,10 +375,12 @@
 
         <!-- Card 5 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/antenatal.jpg" alt="Physiotherapist guiding a pregnant patient through an antenatal exercise at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/antenatal.jpg"
+                alt="Physiotherapist guiding a pregnant patient through an antenatal exercise at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -391,10 +405,12 @@
 
         <!-- Card 6 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/geriatric.jpg" alt="Physiotherapist supporting an older adult through a balance exercise at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/geriatric.jpg"
+                alt="Physiotherapist supporting an older adult through a balance exercise at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -420,10 +436,12 @@
 
         <!-- Card 7 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/pediatric.jpg" alt="Physiotherapist working with a child during a pediatric physiotherapy session at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/pediatric.jpg"
+                alt="Physiotherapist working with a child during a pediatric physiotherapy session at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -448,10 +466,12 @@
 
         <!-- Card 8 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
           <div>
             <div class="aspect-video">
-              <img src="img/preventive.jpg" alt="Physiotherapist guiding a client through a posture and wellness assessment at AlignAsya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <img src="img/preventive.jpg"
+                alt="Physiotherapist guiding a client through a posture and wellness assessment at AlignAsya"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-5">
               <span
@@ -477,106 +497,6 @@
     </div>
   </section>
   <!-- Services -->
-  <!-- <section id="services" class="py-24">
-    <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-2xl font-bold">Our Services</h3>
-      <p class="text-gray-600 mt-2">Comprehensive, compassionate physiotherapy & wellness services.</p>
-      <p class="text-gray-600 mt-2">At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide comprehensive,
-        evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our expert
-        physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through
-        personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic exercises,
-        electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age groups.
-      </p>
-
-      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Musculoskeletal Physiotherapy</h4>
-          <p class="text-sm text-gray-600 mt-2">We specialize in the diagnosis and treatment of muscle, joint, and
-            spine-related conditions. Our musculoskeletal physiotherapy programs help reduce pain, improve mobility, and
-            prevent future injuries.</p>
-          <h5 class="font-semibold">Conditions treated include:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Back and neck pain</li>
-            <li>• Shoulder, knee, and joint disorders</li>
-            <li>• Sports injuries</li>
-            <li>• Arthritis and posture-related issues</li>
-            <li>• Post-fracture and post-surgical rehabilitation</li>
-          </ul>
-        </article>
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Neurological Rehabilitation</h4>
-          <p class="text-sm text-gray-600 mt-2">Our neurological rehabilitation services are designed to help patients
-            regain independence and functional ability following neurological conditions or injuries. We use
-            task-specific training and advanced therapeutic techniques to promote neuro-recovery.</p>
-          <h5 class="font-semibold">We treat conditions such as:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Stroke (paralysis)</li>
-            <li>• Parkinson's disease</li>
-            <li>• Multiple sclerosis</li>
-            <li>• Spinal cord injuries</li>
-            <li>• Nerve injuries and neuropathies</li>
-          </ul>
-        </article>
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Women's Health & Antenatal Care</h4>
-          <p class="text-sm text-gray-600 mt-2">We provide specialized physiotherapy care tailored to women's unique
-            health needs across different life stages. Our antenatal and postnatal programs focus on comfort, strength,
-            and recovery.</p>
-          <h5 class="font-semibold">Our services include:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Antenatal exercise programs</li>
-            <li>• Pregnancy-related back and pelvic pain management</li>
-            <li>• Postnatal rehabilitation</li>
-            <li>• Pelvic floor strengthening</li>
-            <li>• Post-delivery recovery and posture correction</li>
-          </ul>
-        </article>
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Geriatric Physiotherapy</h4>
-          <p class="text-sm text-gray-600 mt-2">Our geriatric physiotherapy services aim to promote active aging,
-            independence, and improved balance in older adults. We focus on safe, gentle, and effective therapies to
-            enhance mobility and confidence.</p>
-          <h5 class="font-semibold">Key areas include:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Balance and fall-prevention training</li>
-            <li>• Joint stiffness and pain management</li>
-            <li>• Osteoporosis and arthritis care</li>
-            <li>• Strength and mobility enhancement</li>
-            <li>• Post-surgical rehabilitation</li>
-          </ul>
-        </article>
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Pediatric Physiotherapy</h4>
-          <p class="text-sm text-gray-600 mt-2">We offer compassionate and specialized physiotherapy care for infants
-            and children to support healthy growth and development. Our child-friendly approach ensures comfort and
-            effective outcomes.</p>
-          <h5 class="font-semibold">Conditions treated include:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Developmental delays</li>
-            <li>• Cerebral palsy</li>
-            <li>• Postural and gait abnormalities</li>
-            <li>• Congenital and neurological conditions</li>
-            <li>• Sports and activity-related injuries</li>
-          </ul>
-        </article>
-
-        <article class="bg-white border rounded-lg p-6 shadow-sm">
-          <h4 class="font-semibold">Wellness & Preventive Care</h4>
-          <p class="text-sm text-gray-600 mt-2">Our Wellness & Preventive Care programs are designed to help individuals
-            maintain optimal physical health, prevent injuries, and enhance overall well-being through proactive
-            physiotherapy.</p>
-          <h5 class="font-semibold">Our wellness services include:</h5>
-          <ul class="text-sm text-gray-600">
-            <li>• Posture assessment and correction</li>
-            <li>• Ergonomic advice for workplace and daily activities</li>
-            <li>• Movement screening and injury prevention programs</li>
-            <li>• Flexibility, strength, and core stability training</li>
-            <li>• Lifestyle and fitness guidance for long-term health</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section> -->
 
   <!-- About -->
   <section id="about" class="py-24">
@@ -614,18 +534,70 @@
   <!-- Gallery / AI images -->
   <section id="gallery" class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-2xl font-bold">Gallery</h3>
-      <p class="text-gray-600 mt-2">A few moments from our clinic and care</p>
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold">Gallery</h3>
+          <p class="text-gray-600 mt-2">A few moments from our clinic and care</p>
+        </div>
+        <div class="flex space-x-3">
+          <button id="galleryPrevBtn"
+            class="p-3 rounded-full bg-white border border-gray-200 shadow-sm text-gray-700 hover:bg-gray-50 active:scale-95 transition-all cursor-pointer"
+            aria-label="Previous gallery images">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button id="galleryNextBtn"
+            class="p-3 rounded-full bg-white border border-gray-200 shadow-sm text-gray-700 hover:bg-gray-50 active:scale-95 transition-all cursor-pointer"
+            aria-label="Next gallery images">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
 
-      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <img src="img/sh4.jpg" alt="Patient performing a guided strengthening exercise at AlignAsya" class="rounded-lg shadow">
-        <img src="img/sh5.jpg" alt="Physiotherapist performing manual therapy on a patient's shoulder" class="rounded-lg shadow">
-        <img src="img/sh6.jpg" alt="Physiotherapist applying electrotherapy treatment at AlignAsya" class="rounded-lg shadow">
-        <img src="img/sh7.jpg" alt="Reception and waiting area at AlignAsya clinic, Mira Road" class="rounded-lg shadow">
-        <img src="img/sh8.jpg" alt="Patient performing a balance and mobility exercise" class="rounded-lg shadow">
-        <img src="img/sh1.jpg" alt="Physiotherapist guiding a patient through a stretching exercise" class="rounded-lg shadow">
-        <img src="img/sh2.jpg" alt="Physiotherapist assessing a patient's joint mobility" class="rounded-lg shadow">
-        <img src="img/sh3.jpg" alt="Treatment room at AlignAsya clinic, Mira Road" class="rounded-lg shadow">
+      <div id="galleryCarouselTrack"
+        class="flex gap-4 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing scroll-smooth py-2 snap-x snap-mandatory">
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh4.jpg" alt="Patient performing a guided strengthening exercise at AlignAsya"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh5.jpg" alt="Physiotherapist performing manual therapy on a patient's shoulder"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh6.jpg" alt="Physiotherapist applying electrotherapy treatment at AlignAsya"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh7.jpg" alt="Reception and waiting area at AlignAsya clinic, Mira Road"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh8.jpg" alt="Patient performing a balance and mobility exercise"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh1.jpg" alt="Physiotherapist guiding a patient through a stretching exercise"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh2.jpg" alt="Physiotherapist assessing a patient's joint mobility"
+            class="w-full h-72 object-cover">
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh3.jpg" alt="Treatment room at AlignAsya clinic, Mira Road" class="w-full h-72 object-cover">
+        </div>
       </div>
     </div>
   </section>
@@ -647,7 +619,7 @@
 
 
   <!-- ============ FAQ ============ -->
-  <section id="faq" class="py-24 bg-slate-50 border-t border-b border-slate-200">
+  <section id="faq" class="py-24 bg-gray-100 border-t border-b border-slate-300">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <div class="text-center space-y-3 mb-16">
         <span
@@ -656,7 +628,7 @@
         <h2 class="text-3xl font-black text-slate-900 tracking-tight">Physiotherapy Treatment FAQ & Expert Insights</h2>
         <p class="text-xs text-slate-500 max-w-md mx-auto">Get answers regarding appointment bookings, clinical
           modalities, home care services, and pricing from Alignasya clinicians.</p>
-        <div class="h-1 w-12 bg-[#8dc63f] mx-auto rounded-full"></div>
+        <div class="h-1 w-12 bg-lime-600 mx-auto rounded-full"></div>
       </div>
 
       <!-- Structured Data Contextual Wrapper -->
@@ -791,8 +763,7 @@
         <div class="mt-4 rounded-2xl overflow-hidden shadow border border-slate-200">
           <iframe title="Map showing directions to AlignAsya Physiotherapy Center, Mira Road, Thane, Mumbai"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.7039925368576!2d72.866762!3d19.2952346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b19c40d261b1%3A0x83c6264f6f030baf!2sAlignAsya%20%7C%20Physiotherapy%20and%20Wellness%20Center%20By%20Dr.Renu%20Saroj!5e0!3m2!1sen!2sin!4v1784462846641!5m2!1sen!2sin"
-            class="iframe" allowfullscreen loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            class="iframe" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -818,15 +789,6 @@
       </div>
     </div>
   </section>
-
-
-  <!-- Footer -->
-  <!-- <footer class="bg-gray-800 text-white py-8">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="text-sm">© AlignAsya PhysioTherapy & Wellness Center — Dr. Renu Saroj. All rights reserved.</p>
-      <div class="text-sm">Follow: <span class="ml-2"><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a> • <a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a> • Google</span></div>
-    </div>
-  </footer> -->
 
   <!-- ============ FOOTER ============ -->
   <footer class="bg-gray-800 text-white py-8">
@@ -893,15 +855,16 @@
     });
 
 
-    // Carousel
+    // Hero image carousel
     (function () {
-      var track = document.getElementById('carouselTrack');
+      var track = document.getElementById('heroCarouselTrack');
       var slides = track ? track.children.length : 0;
       var index = 0;
-      var dotsWrap = document.getElementById('dots');
+      var dotsWrap = document.getElementById('heroDots');
       var timer;
 
       function go(i) {
+        if (!track || !dotsWrap || !slides) return;
         index = (i + slides) % slides;
         track.style.transform = 'translateX(-' + index * 100 + '%)';
         Array.prototype.forEach.call(dotsWrap.children, function (d, di) {
@@ -913,6 +876,8 @@
       function prev() { go(index - 1); }
       function restart() { clearInterval(timer); timer = setInterval(next, 5000); }
 
+      if (!dotsWrap) return;
+
       for (var i = 0; i < slides; i++) {
         var dot = document.createElement('button');
         dot.setAttribute('role', 'tab');
@@ -921,11 +886,60 @@
         dotsWrap.appendChild(dot);
       }
 
-      document.getElementById('nextBtn').addEventListener('click', function () { next(); restart(); });
-      document.getElementById('prevBtn').addEventListener('click', function () { prev(); restart(); });
+      document.getElementById('heroNextBtn').addEventListener('click', function () { next(); restart(); });
+      document.getElementById('heroPrevBtn').addEventListener('click', function () { prev(); restart(); });
       if (slides) { go(0); restart(); }
     })();
 
+    // Gallery carousel
+    (function () {
+      const track = document.getElementById('galleryCarouselTrack');
+      const section = document.getElementById('gallery');
+      const prevBtn = document.getElementById('galleryPrevBtn');
+      const nextBtn = document.getElementById('galleryNextBtn');
+
+      if (!track || !section || !prevBtn || !nextBtn) return;
+
+      const getCardWidth = () => {
+        const firstCard = track.children[0];
+        if (!firstCard) return 320;
+        const cardWidth = firstCard.getBoundingClientRect().width;
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.columnGap || style.gap || 16);
+        return cardWidth + gap;
+      };
+
+      let autoplayTimer = null;
+      const AUTOPLAY_INTERVAL = 4000;
+
+      const moveNext = () => {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft >= maxScroll - 10) track.scrollLeft = 0;
+        else track.scrollLeft += getCardWidth();
+      };
+
+      const movePrev = () => {
+        if (track.scrollLeft <= 10) track.scrollLeft = track.scrollWidth - track.clientWidth;
+        else track.scrollLeft -= getCardWidth();
+      };
+
+      const startAutoplay = () => {
+        if (autoplayTimer) return;
+        autoplayTimer = setInterval(moveNext, AUTOPLAY_INTERVAL);
+      };
+
+      const stopAutoplay = () => {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      };
+
+      prevBtn.addEventListener('click', () => { movePrev(); stopAutoplay(); startAutoplay(); });
+      nextBtn.addEventListener('click', () => { moveNext(); stopAutoplay(); startAutoplay(); });
+
+      section.addEventListener('mouseenter', stopAutoplay);
+      section.addEventListener('mouseleave', startAutoplay);
+      startAutoplay();
+    })();
 
     // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -1064,6 +1078,85 @@
         content.style.maxHeight = '0px';
         icon.innerText = '+';
       }
+    }
+  </script>
+  <script>
+    const track = document.getElementById('specialtiesCarouselTrack');
+    const container = document.getElementById('carouselSection') || document.getElementById('services');
+    const prevBtn = document.getElementById('specialtiesPrevBtn');
+    const nextBtn = document.getElementById('specialtiesNextBtn');
+
+    if (track && container && prevBtn && nextBtn) {
+      const getCardWidth = () => {
+        const firstCard = track.children[0];
+        if (!firstCard) return 320;
+        const cardWidth = firstCard.getBoundingClientRect().width;
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.columnGap || style.gap || 24);
+        return cardWidth + gap;
+      };
+
+      let isDown = false;
+      let startX, scrollLeft;
+      let autoplayTimer = null;
+      const AUTOPLAY_INTERVAL = 3000;
+
+      const startDragging = (e) => {
+        isDown = true;
+        stopAutoplay();
+        track.classList.remove('scroll-smooth');
+        startX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+      };
+
+      const stopDragging = () => {
+        isDown = false;
+        track.classList.add('scroll-smooth');
+        startAutoplay();
+      };
+
+      const runDragging = (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const currentX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+        track.scrollLeft = scrollLeft - (currentX - startX) * 1.5;
+      };
+
+      track.addEventListener('mousedown', startDragging);
+      track.addEventListener('touchstart', startDragging, { passive: true });
+      track.addEventListener('mouseleave', stopDragging);
+      track.addEventListener('mouseup', stopDragging);
+      track.addEventListener('touchend', stopDragging);
+      track.addEventListener('mousemove', runDragging);
+      track.addEventListener('touchmove', runDragging, { passive: false });
+
+      const moveSliderNext = () => {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (track.scrollLeft >= maxScroll - 10) track.scrollLeft = 0;
+        else track.scrollLeft += getCardWidth();
+      };
+
+      const moveSliderPrev = () => {
+        if (track.scrollLeft <= 10) track.scrollLeft = track.scrollWidth - track.clientWidth;
+        else track.scrollLeft -= getCardWidth();
+      };
+
+      nextBtn.addEventListener('click', () => { moveSliderNext(); stopAutoplay(); startAutoplay(); });
+      prevBtn.addEventListener('click', () => { moveSliderPrev(); stopAutoplay(); startAutoplay(); });
+
+      function startAutoplay() {
+        if (autoplayTimer) return;
+        autoplayTimer = setInterval(moveSliderNext, AUTOPLAY_INTERVAL);
+      }
+
+      function stopAutoplay() {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+
+      container.addEventListener('mouseenter', stopAutoplay);
+      container.addEventListener('mouseleave', startAutoplay);
+      startAutoplay();
     }
   </script>
 </body>
