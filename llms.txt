@@ -1,13 +1,31 @@
 # alignasya.com
 
-> AlignAsya is a professional single-page website of modern physiotherapy and wellness centre led by Dr. Renu Saroj at Mira Road Mumbai, offering services and solutions.
+> AlignAsya is a modern physiotherapy and wellness centre in Mira Road, Mumbai, led by Dr. Renu Saroj, offering physiotherapy specialties, hands-on treatment modalities, and educational content across a multi-page website.
 
 ## Navigation
-- [Home](https://alignasya.com): Main hub showcasing our Modern technique of physiotherapy, family testimonials, and clinic overview.
+- [Home](https://alignasya.com/index.html): Clinic overview, all clinical specialties, about Dr. Renu Saroj, patient testimonials, FAQ, and contact/booking information.
+- [Blog](https://alignasya.com/blog.html): The AlignAsya Wellness Journal — physiotherapy tips, recovery guidance, and everyday wellness articles.
 
-## Core Content
-This is a single-page HTML website. All critical business information, including the company overview, services offered, team details, and contact information, is contained entirely on the primary homepage.
-At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide comprehensive, evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our expert physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic exercises, electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age groups.
+## Specialties
+- [Sports Injury Management](https://alignasya.com/sports-injury-management.html): Kinetic analysis, athletic conditioning, and return-to-play rehabilitation for ACL/ligament injuries, muscle strains, tendon injuries, and ankle sprains.
+- [Orthopedic Spine & Joint](https://alignasya.com/orthopedic-spine-joint.html): Structural care for chronic sciatica, lumbar strains, cervical spondylosis, knee osteoarthritis, and frozen shoulder.
+- [Neurological Rehabilitation](https://alignasya.com/neurological-rehabilitation.html): Neuroplasticity-based rehab for post-stroke recovery, Parkinson's disease, multiple sclerosis, and peripheral neuropathies.
+- [Musculoskeletal Physiotherapy](https://alignasya.com/musculoskeletal-physiotherapy.html): Diagnosis and treatment of muscle, joint, and spine-related conditions including back/neck pain, arthritis, and post-fracture rehab.
+- [Women's Health & Antenatal Care](https://alignasya.com/womens-health-antenatal-care.html): Antenatal exercise, pregnancy back/pelvic pain, postnatal rehabilitation, and pelvic floor strengthening.
+- [Geriatric Physiotherapy](https://alignasya.com/geriatric-physiotherapy.html): Fall-prevention training, joint pain management, osteoporosis care, and post-surgical rehab for older adults.
+- [Pediatric Physiotherapy](https://alignasya.com/pediatric-physiotherapy.html): Care for developmental delays, cerebral palsy, and postural/gait abnormalities in infants and children.
+- [Wellness & Preventive Care](https://alignasya.com/wellness-preventive-care.html): Posture assessment, ergonomic advice, movement screening, and injury-prevention programs.
+
+## Treatment Modalities
+- [Dry Needling](https://alignasya.com/dry-needling.html): Trigger-point needling for muscle tightness, chronic pain, and tension headaches.
+- [Kinesio Taping](https://alignasya.com/kinesio-taping.html): Elastic therapeutic taping for joint support, swelling reduction, and postural correction.
+- [Cupping Therapy](https://alignasya.com/cupping.html): Suction-based therapy for muscle tightness, chronic pain, and sports recovery.
+- [Manual Therapy](https://alignasya.com/manual-therapy.html): Hands-on joint mobilization and soft tissue techniques for stiffness and restricted movement.
+
+## Blog Articles
+- [Why Your Back Hurts — and What You Can Do About It](https://alignasya.com/blog-back-pain.html): Common causes of back pain and physiotherapist-backed steps for recovery.
+- [Small Daily Habits That Keep Your Body Moving Well](https://alignasya.com/blog-daily-habits.html): Everyday habits for posture, mobility, breathing, and energy.
+- [Returning to Exercise After an Injury: A Smarter Roadmap](https://alignasya.com/blog-returning-to-exercise.html): A graded, physiotherapist-guided approach to resuming exercise safely.
 
 ## Crawler Instructions
 User-agent: *

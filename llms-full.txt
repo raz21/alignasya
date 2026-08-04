@@ -1,48 +1,79 @@
 # AlignAsya - Physiotherapy and Wellness Center
 
-A modern physiotherapy and wellness sanctuary at Mira Road, Mumbai, Thane led by Dr. Renu Saroj — pairing evidence-based rehabilitation with a deeply personal, calming approach to recovery. India's elite physiotherapy care featuring cutting-edge laser modalities, specialized manual adjustments, and personalized kinetic rehabilitation programs. We provide personalised rehabilitation, pain management, sports therapy and holistic wellness programs tailored to your needs. At Align Asya Physiotherapy Centre, Mira Road, Mumbai, we provide comprehensive, evidence-based physiotherapy care using state-of-the-art facilities and modern treatment modalities. Our expert physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through personalized treatment plans. We offer a wide range of services including manual therapy, therapeutic exercises, electrotherapy, and hydrotherapy, ensuring faster recovery and long-term results for patients of all age groups.
+A modern physiotherapy and wellness sanctuary at Mira Road, Mumbai, Thane, led by Dr. Renu Saroj — pairing evidence-based rehabilitation with a personal, calming approach to recovery. AlignAsya offers eight clinical specialties, four hands-on treatment modalities, and an educational wellness blog across a multi-page website.
 
 ---
 
 ## 1. Hero / Introduction
-Welcome to AlignAsya — a modern physiotherapy and wellness centre led by Dr. Renu Saroj. India's elite physiotherapy care featuring cutting-edge laser modalities, specialized manual adjustments, and personalized kinetic rehabilitation programs. We provide personalised rehabilitation, pain management, sports therapy and holistic wellness programs tailored to your needs.
+Welcome to AlignAsya — a modern physiotherapy and wellness centre led by Dr. Renu Saroj. Personalized rehabilitation, pain management, sports therapy, and holistic wellness programs. At AlignAsya Physiotherapy Centre, Mira Road, Mumbai, we provide comprehensive, evidence-based physiotherapy care using modern treatment modalities. Our physiotherapists focus on relieving pain, restoring movement, and enhancing overall quality of life through personalized treatment plans, combining manual therapy, therapeutic exercises, electrotherapy, and hands-on modalities for faster recovery and long-term results across all age groups.
 
 ---
 
 ## 2. About Us
-Dr. Renu Saroj is a dedicated physiotherapist with extensive experience in musculoskeletal and sports rehabilitation. Her approach is patient-centred, evidence-based and focused on returning you safely to the activities you love. Our expert physiotherapist Dr. Renu Saroj and her team in Mumbai is a skilled healthcare professional trained in various therapeutic techniques to restore movement, alleviate pain, and enhance overall mobility. Physiotherapists treat a number of musculoskeletal conditions - a broad term that encompasses damage to bones, muscles, ligaments, tendons and nerves.
+Dr. Renu Saroj is a dedicated physiotherapist with extensive experience in musculoskeletal and sports rehabilitation. Her approach is patient-centred, evidence-based, and focused on returning patients safely to the activities they love. She and her team are trained in a range of therapeutic techniques to restore movement, alleviate pain, and enhance overall mobility, treating musculoskeletal conditions across all ages — from children to older adults. As an ANC-PNC certified coach and Women's Health specialist, Dr. Renu also offers structured programs designed around the unique needs of pregnancy, postpartum, and beyond.
 
 ---
 
-## 3. Services / What We Do
-[List all your services, features, or products here in detail.]
-- **Service 1:** Sports Injury Management: Fast-tracked kinetic analysis, athletic conditioning, dynamic muscle retraining, and joint stabilization to get you back on the field safely.
-- **Service 2:** Orthopedic Spine & Joint: Advanced structural solutions tailored for chronic sciatica, lumbar strains, cervical spondylosis, knee osteoarthritis, and frozen shoulders.
-- **Service 3:** Neurological Rehabilitation: Specialized neuroplasticity programs for post-stroke recovery, Parkinson's disease, multiple sclerosis, and peripheral neuropathies.
-- **Service 4:** Musculoskeletal Physiotherapy: We specialize in the diagnosis and treatment of muscle, joint, and spine-related conditions.
-- **Service 5:** Women's Health & Antenatal Care: We provide specialized physiotherapy care tailored to women's unique health needs across different life stages. Our antenatal and postnatal programs focus on comfort, strength, and recovery.
-- **Service 6:** Geriatric Physiotherapy: Our geriatric physiotherapy services aim to promote active aging, independence, and improved balance in older adults. We focus on safe, gentle, and effective therapies to enhance mobility and confidence.
-- **Service 7:** Pediatric Physiotherapy: We offer compassionate and specialized physiotherapy care for infants and children to support healthy growth and development. Our child-friendly approach ensures comfort and effective outcomes.
-- **Service 8:** Wellness & Preventive Care: Our programs are designed to help individuals maintain optimal physical health, prevent injuries, and enhance overall well-being through proactive physiotherapy.
+## 3. Clinical Specialties
+Full detail pages: https://alignasya.com/index.html#services
+
+- **Sports Injury Management** (https://alignasya.com/sports-injury-management.html): Fast-tracked kinetic analysis, athletic conditioning, dynamic muscle retraining, and joint stabilization. Treats ACL & ligament injuries, muscle strains/tears, tendon injuries, ankle sprains, shoulder instability, and stress fractures.
+- **Orthopedic Spine & Joint** (https://alignasya.com/orthopedic-spine-joint.html): Structural solutions for chronic sciatica, lumbar strains/disc issues, cervical spondylosis, knee osteoarthritis, frozen shoulder, and spinal stenosis.
+- **Neurological Rehabilitation** (https://alignasya.com/neurological-rehabilitation.html): Neuroplasticity-based programs for post-stroke recovery, Parkinson's disease, multiple sclerosis, spinal cord injuries, peripheral neuropathies, and balance/fall-risk training.
+- **Musculoskeletal Physiotherapy** (https://alignasya.com/musculoskeletal-physiotherapy.html): Diagnosis and treatment of muscle, joint, and spine-related conditions — back/neck pain, shoulder/knee/joint disorders, arthritis, post-fracture and post-surgical rehabilitation.
+- **Women's Health & Antenatal Care** (https://alignasya.com/womens-health-antenatal-care.html): Antenatal exercise programs, pregnancy back/pelvic pain management, postnatal rehabilitation, pelvic floor strengthening, and diastasis recti/core recovery.
+- **Geriatric Physiotherapy** (https://alignasya.com/geriatric-physiotherapy.html): Balance and fall-prevention training, joint stiffness and pain management, osteoporosis/arthritis care, strength and mobility enhancement, and home care physiotherapy.
+- **Pediatric Physiotherapy** (https://alignasya.com/pediatric-physiotherapy.html): Care for developmental delays, cerebral palsy, postural and gait abnormalities, congenital/neurological conditions, and early motor concerns like torticollis.
+- **Wellness & Preventive Care** (https://alignasya.com/wellness-preventive-care.html): Posture assessment and correction, ergonomic advice, movement screening, flexibility/core stability training, and injury-prevention programs.
 
 ---
 
-## 4. Key Benefits / Value Proposition
-As an ANC-PNC certified coach and Women's Health specialist, Dr. Renu offers structured programs designed around the unique needs of pregnancy, postpartum, and beyond.
+## 4. Treatment Modalities
+- **Dry Needling** (https://alignasya.com/dry-needling.html): Thin, sterile needles target trigger points and tight muscle bands to release tension. Used for myofascial trigger points, chronic neck/shoulder pain, tension headaches, and sports-related muscle tightness.
+- **Kinesio Taping** (https://alignasya.com/kinesio-taping.html): Elastic therapeutic tape supports muscles and joints while allowing full range of motion. Used for joint support, swelling reduction, postural correction, and sports support.
+- **Cupping Therapy** (https://alignasya.com/cupping.html): Suction cups create negative pressure to promote blood flow and ease muscle tightness. Used for chronic back/neck pain, sports recovery, and restricted tissue mobility.
+- **Manual Therapy** (https://alignasya.com/manual-therapy.html): Hands-on joint mobilization, soft tissue work, and myofascial release. Used for joint stiffness, frozen shoulder, back/neck pain, and post-surgical stiffness.
 
 ---
 
-## 5. Contact Information & Call to Action
-[Paste your contact details here so AI models can accurately quote how to reach you.]
+## 5. Blog / Wellness Journal
+Blog index: https://alignasya.com/blog.html
+
+- **Why Your Back Hurts — and What You Can Do About It** (https://alignasya.com/blog-back-pain.html): Understanding common causes of back pain and physiotherapist-backed steps toward recovery and confident movement.
+- **Small Daily Habits That Keep Your Body Moving Well** (https://alignasya.com/blog-daily-habits.html): Practical daily routines for posture, mobility, breathing, and energy that fit into a busy schedule.
+- **Returning to Exercise After an Injury: A Smarter Roadmap** (https://alignasya.com/blog-returning-to-exercise.html): A graded, physiotherapist-guided framework for safely rebuilding strength and confidence after injury.
+
+---
+
+## 6. Key Benefits / Value Proposition
+- Led by Dr. Renu Saroj, an ANC-PNC certified coach and Women's Health specialist.
+- Evidence-based, personalized treatment plans across all age groups — pediatric through geriatric.
+- Combines clinical specialties with hands-on modalities (dry needling, kinesio taping, cupping, manual therapy) for a complete recovery plan.
+- Home visit / domiciliary physiotherapy available for patients managing conditions like post-operative recovery, stroke rehabilitation, or paralysis who cannot travel to the clinic.
+
+---
+
+## 7. Frequently Asked Questions
+- **Referrals:** No doctor's referral is required to book an appointment at AlignAsya.
+- **Home visit charges:** Typically range between ₹800–₹2,500 per session depending on condition severity and equipment needed; contact the clinic for an exact quote.
+- **Physiotherapy vs. chiropractic care:** AlignAsya combines gentle joint mobilization with muscle retraining, posture correction, and electrotherapy, rather than manipulation alone.
+- **Non-surgical options:** Orthopedic physiotherapy techniques (mechanical decompression, core strengthening, tissue-regeneration modalities) are used to help patients with knee osteoarthritis or lumbar disc issues avoid or delay surgery where appropriate.
+
+---
+
+## 8. Contact Information & Booking
 - **Email:** info@alignasya.com
 - **Phone:** +91 93244 74278
-- **Location:** Shop no. 2, Excel ark, Ramdev Park, Queens Park, Mira Road East, Mira Bhayandar,
-Maharashtra 401107
-- **Working Hours:** 10:00 AM – 1:00 PM | 5:00 PM – 9:00 PM
+- **Location:** Shop no. 2, Excel Ark, Ramdev Park, Queens Park, Mira Road East, Mira Bhayandar, Maharashtra 401107
+- **Working Hours:** Monday–Saturday, 9:00 AM – 9:00 PM
+- **Book an appointment:** https://alignasya.com/index.html#contact
+- **Social:** Instagram (https://www.instagram.com/alignasya/), Facebook (https://www.facebook.com/alignasya/), YouTube (https://www.youtube.com/@alignasya)
 
-## 6. Crawler Instructions
+---
+
+## 9. Crawler Instructions
 User-agent: *
 Allow: /
 
 ---
-*Metadata: Last updated July 2026. For the live interactive experience, visit https://alignasya.com*
+*Metadata: Last updated August 2026. For the live interactive experience, visit https://alignasya.com*
