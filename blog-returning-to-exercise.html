@@ -13,10 +13,11 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://alignasya.com/blog-returning-to-exercise.html">
 <meta name="robots" content="index, follow">
+<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
+
 <script>
   tailwind.config = {
     theme: {
@@ -42,21 +43,29 @@
 <body class="bg-white text-ink font-sans">
 
 <!-- Header -->
-<header class="border-b border-mist sticky top-0 bg-white/90 backdrop-blur z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="img/logoicon.png" alt="AlignAsya logo" class="h-9 w-9 rounded-full object-cover">
-      <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-tealDark">Align</span><span
-            class="text-teal">Asya</span></div>
-    </a>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-ink/80">
-      <a href="index.html" class="hover:text-teal">Home</a>
-      <a href="index.html#services" class="hover:text-teal">Specialties</a>
-      <a href="index.html#about" class="hover:text-teal">About</a>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+  <div class="max-w-6xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center space-x-1 group">
+        <img src="img/logoicon.png" alt="Alignasya Logo" class="sm:h-8 lg:h-10 h-10 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="text-2xl font-bold tracking-tight md:flex"><span class="text-tealDark">Align</span><span
+            class="text-lime-600">Asya</span></div>
+      </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+      <a href="index.html" class="hover:text-teal transition">Home</a>
+      <a href="index.html#services" class="hover:text-teal transition">Specialties</a>
+      <a href="index.html#about" class="hover:text-teal transition">About</a>
       <a href="blog.html" class="text-teal">Blog</a>
-      <a href="index.html#contact" class="hover:text-teal">Contact</a>
+      <a href="index.html#contact" class="hover:text-teal transition">Contact</a>
     </nav>
-    <a href="index.html#contact" class="hidden sm:inline-block bg-teal hover:bg-tealDark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition">Book an Appointment</a>
+    <a href="index.html#contact" class="hidden sm:inline-flex bg-teal hover:bg-tealDark text-white px-5 py-2 rounded-full font-semibold transition">Book an Appointment</a>
+    <button id="menuBtn" class="md:hidden menu-toggle p-2" aria-label="Open menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 px-5 py-4 space-y-3">
+    <a href="index.html" class="block">Home</a>
+    <a href="index.html#services" class="block">Specialties</a>
+    <a href="index.html#about" class="block">About</a>
+    <a href="blog.html" class="block text-teal font-semibold">Blog</a>
+    <a href="index.html#contact" class="block">Contact</a>
   </div>
 </header>
 
@@ -117,36 +126,72 @@
   <a href="blog.html" class="inline-block mt-10 text-sm font-semibold text-teal hover:text-tealDark">← Back to all articles</a>
 </article>
 
-<!-- Footer -->
-<footer class="bg-ink text-mist/80 mt-10">
-  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-4 gap-8 text-sm">
-    <div class="sm:col-span-2">
-      <span class="text-lg font-black text-white">AlignAsya</span>
-      <p class="mt-3 text-mist/60 max-w-xs">A modern physiotherapy and wellness sanctuary led by Dr. Renu Saroj. Healing movement, restoring life — one body at a time.</p>
-    </div>
-    <div>
-      <p class="font-semibold text-white mb-3">Care</p>
-      <ul class="space-y-2 text-mist/60">
-        <li><a href="index.html#services" class="hover:text-white">Orthopedics</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Neurological</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Sports Rehab</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Geriatric</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Pediatric</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="font-semibold text-white mb-3">Modalities</p>
-      <ul class="space-y-2 text-mist/60">
-        <li><a href="index.html#services" class="hover:text-white">Dry Needling</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Kinesio Taping</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Cupping</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Manual Therapy</a></li>
-        <li><a href="index.html#services" class="hover:text-white">Women's Health</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10 py-6 text-center text-xs text-mist/50">© 2026 AlignAsya PhysioTherapy & Wellness Center — Led by Dr. Renu Saroj · Reg. PT/012470 · All rights reserved.</div>
-</footer>
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container">
+      <div class="footer-top text-sm">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="img/logo.jpg" alt="AlignAsya" />
+          </div>
+          <div class="h-2"></div>
+          <p>A modern physiotherapy and wellness sanctuary led by Dr. Renu Saroj. Healing movement, restoring life — one
+            body at a time.</p>
+        </div>
 
+        <div class="footer-col">
+          <h5>Care</h5>
+          <ul>
+            <li><a href="orthopedic-spine-joint.html">Orthopedics</a></li>
+            <li><a href="neurological-rehabilitation.html">Neurological</a></li>
+            <li><a href="sports-injury-management.html">Sports Rehab</a></li>
+            <li><a href="geriatric-physiotherapy.html">Geriatric</a></li>
+            <li><a href="pediatric-physiotherapy.html">Pediatric</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Modalities</h5>
+          <ul>
+            <li><a href="dry-needling.html">Dry Needling</a></li>
+            <li><a href="kinesio-taping.html">Kinesio Taping</a></li>
+            <li><a href="cupping.html">Cupping</a></li>
+            <li><a href="manual-therapy.html">Manual Therapy</a></li>
+            <li><a href="womens-health-antenatal-care.html">Women's Health</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Follow</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/alignasya/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/alignasya/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@alignasya" target="_blank">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom pt-6">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-xs">© <span id="year"></span> AlignAsya PhysioTherapy & Wellness Center — Led by Dr. Renu Saroj
+            · Reg. PT/012470 · All
+            rights
+            reserved.</p>
+          <div class="text-xs">
+            <p>Move well · Recover well · Live well</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+<script>
+document.getElementById('menuBtn').onclick = () => document.getElementById('mobileMenu').classList.toggle('hidden');
+document.querySelectorAll('.filter').forEach(btn => btn.onclick = () => {
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('bg-teal','text-white'));
+  btn.classList.add('bg-teal','text-white');
+  const cat = btn.dataset.cat;
+  document.querySelectorAll('.post').forEach(p => p.classList.toggle('hidden', cat !== 'all' && p.dataset.cat !== cat));
+});
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
