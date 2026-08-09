@@ -112,4 +112,23 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  </url>
+  <url>
+    <loc>https://alignasya.com/blog-cervical-spondylosis.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/blog-sciatica.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://alignasya.com/blog-best-physiotherapist-mira-road.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

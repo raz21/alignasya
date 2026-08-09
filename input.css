@@ -1,7 +1,8 @@
 /* 1. Imports must always be at the absolute top */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,700|Source+Sans+Pro:400,600");
+/* tailwindcss.exe -i input.css -o style.css --minify */
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,800|Source+Sans+Pro:400,600,700,800");
 @import "tailwindcss";
-@config "./tailwind.config.js";
+@config "tailwind.config.js";
 
 /* 2. Your custom typography and styles */
 body {

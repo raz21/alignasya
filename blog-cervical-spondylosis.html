@@ -39,6 +39,14 @@
   body{font-family:'Source Sans Pro',sans-serif;}
   .prose-article p{margin-bottom:1.25rem; line-height:1.8;}
   .prose-article blockquote{border-left:4px solid #0799b2; padding-left:1.25rem; font-style:italic; color:#087d91; margin:2rem 0;}
+  .article-layout{display:flex; flex-direction:column; gap:2rem;}
+  .article-content{width:100%; min-width:0; margin:0 auto;}
+  .sidebar{width:100%; min-width:0;}
+  @media (min-width:1024px){
+    .article-layout{flex-direction:row; align-items:flex-start; gap:3rem;}
+    .article-content{flex:1 1 auto; max-width:720px; margin:0;}
+    .sidebar{width:320px; flex:0 0 320px; position:sticky; top:6rem; align-self:start;}
+  }
 </style>
 </head>
 
@@ -80,15 +88,19 @@
 </header>
 
   <!-- Main Body Content -->
-  <main class="max-w-3xl mx-auto px-6 py-10">
-    <a href="blog.html" class="inline-flex items-center text-sm font-bold text-[#007bb6] hover:underline mb-6 transition-all">
-      &larr; Back to Blog
-    </a>
+<!-- Back to blog -->
+<div class="max-w-6xl mx-auto px-6 pt-8">
+  <a href="blog.html" class="text-sm font-semibold text-teal hover:text-tealDark">← Back to Blog</a>
+</div>
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <div class="article-layout">
+      <div class="article-content">
 
     <div class="text-xs font-bold uppercase tracking-wider text-lime-600 mb-2">Physiotherapy &middot; 7 min read</div>
-    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight mb-4">
-      Understanding Cervical Spondylosis: Your Practical Guide to Neck Pain Relief and Long-Term Recovery
+    <h1 class="text-3xl sm:text-4xl text-ink tracking-tight leading-tight mb-4">
+      Understanding Cervical Spondylosis 
     </h1>
+  <p class="mt-4 text-lg text-ink/70 leading-relaxed">Your Practical Guide to Neck Pain Relief and Long-Term Recovery</p>
     
     <div class="text-sm text-gray-500 mb-8">
       By <span class="font-semibold text-slate-700">AlignAsya Physiotherapy Team</span> &middot; August 2026
@@ -171,6 +183,33 @@
   <p class="text-xs text-ink/40 mt-8">This article is for general education and is not a substitute for individualized medical assessment or treatment.</p>
 
   <a href="blog.html" class="inline-block mt-10 text-sm font-semibold text-teal hover:text-tealDark">← Back to all articles</a>
+    </div>
+    <aside class="sidebar space-y-8">
+      <div class="bg-mist rounded-2xl p-6">
+        <h3 class="text-sm font-bold uppercase tracking-widest text-teal mb-4">More From the Blog</h3>
+        <ul class="space-y-4">
+          <li><a href="blog-back-pain.html" class="font-semibold text-ink hover:text-teal leading-snug block text-sm">Why Your Back Hurts — and What You Can Do About It</a></li>
+          <li><a href="blog-daily-habits.html" class="font-semibold text-ink hover:text-teal leading-snug block text-sm">Small Daily Habits That Keep Your Body Moving Well</a></li>
+          <li><a href="blog-returning-to-exercise.html" class="font-semibold text-ink hover:text-teal leading-snug block text-sm">Returning to Exercise After an Injury: A Smarter Roadmap</a></li>
+          <li><a href="blog-sciatica.html" class="font-semibold text-ink hover:text-teal leading-snug block text-sm">Physiotherapy Treatment for Sciatica: What Actually Helps</a></li>
+        </ul>
+        <a href="blog.html" class="inline-block mt-5 text-xs font-bold text-teal hover:text-tealDark">View all articles →</a>
+      </div>
+      <div class="bg-white border border-mist rounded-2xl p-6">
+        <h3 class="text-sm font-bold uppercase tracking-widest text-teal mb-4">Quick Physio Tips</h3>
+        <ul class="space-y-3 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-leaf font-bold">•</span><span>Keep your screen at eye level and shoulders relaxed.</span></li>
+          <li class="flex gap-2"><span class="text-leaf font-bold">•</span><span>Take movement breaks every 45–60 minutes to reduce stiffness.</span></li>
+          <li class="flex gap-2"><span class="text-leaf font-bold">•</span><span>Gentle strengthening is often more helpful than prolonged rest.</span></li>
+        </ul>
+      </div>
+      <div class="bg-teal rounded-2xl p-6 text-center">
+        <h3 class="text-white font-bold text-lg">Need a Physiotherapy Assessment?</h3>
+        <p class="text-white/80 text-sm mt-2">Book a consultation with AlignAsya in Mira Road, Mumbai.</p>
+        <a href="index.html#contact" class="inline-block mt-4 bg-white text-teal font-semibold text-sm px-5 py-2.5 rounded-full hover:bg-mist transition">Book Now</a>
+      </div>
+    </aside>
+  </div>
   </main>
   
   <!-- ============ FOOTER ============ -->
