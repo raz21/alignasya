@@ -2,7 +2,7 @@
 /* tailwindcss.exe -i input.css -o style.css --minify */
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,800|Source+Sans+Pro:400,600,700,800");
 @import "tailwindcss";
-@config "tailwind.config.js";
+@config "./tailwind.config.js";
 
 /* 2. Your custom typography and styles */
 body {
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.1;
 }
 
-.orange-check-list {
+.orange-check-list, .blue-check-list {
   list-style-type: "✓ ";
   padding-left: 20px;
 }
@@ -49,11 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #f59e0b;
   font-size: 1.2em;
   font-weight: bold;
-}
-
-.blue-check-list {
-  list-style-type: "✓ ";
-  padding-left: 20px;
 }
 
 .blue-check-list li::marker {
