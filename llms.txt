@@ -26,6 +26,10 @@
 - [Why Your Back Hurts — and What You Can Do About It](https://alignasya.com/blog-back-pain.html): Common causes of back pain and physiotherapist-backed steps for recovery.
 - [Small Daily Habits That Keep Your Body Moving Well](https://alignasya.com/blog-daily-habits.html): Everyday habits for posture, mobility, breathing, and energy.
 - [Returning to Exercise After an Injury: A Smarter Roadmap](https://alignasya.com/blog-returning-to-exercise.html): A graded, physiotherapist-guided approach to resuming exercise safely.
+- [Understanding Cervical Spondylosis](https://alignasya.com/blog-cervical-spondylosis.html): Neck pain causes, ergonomic principles, and physiotherapy for cervical spondylosis.
+- [Physiotherapy Treatment for Sciatica](https://alignasya.com/blog-sciatica.html): What causes sciatic nerve pain and how physiotherapy can bring lasting relief.
+- [Pediatric Physiotherapy for Children](https://alignasya.com/blog-pediatric-physiotherapy.html): Signs, benefits and what to expect from child physiotherapy — from torticollis to developmental delays.
+- [Why AlignAsya is the Best Physiotherapy Center in Mira Road](https://alignasya.com/blog-best-physiotherapist-mira-road.html): How Dr. Renu Saroj and the AlignAsya team help Mira Road residents find lasting relief.
 
 ## Crawler Instructions
 User-agent: *
