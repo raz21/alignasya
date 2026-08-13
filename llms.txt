@@ -3,7 +3,7 @@
 > AlignAsya is a modern physiotherapy and wellness centre in Mira Road, Mumbai, led by Dr. Renu Saroj, offering physiotherapy specialties, hands-on treatment modalities, and educational content across a multi-page website.
 
 ## Navigation
-- [Home](https://alignasya.com/index.html): Clinic overview, all clinical specialties, about Dr. Renu Saroj, patient testimonials, FAQ, and contact/booking information.
+- [Home](https://alignasya.com/): Clinic overview, all clinical specialties, about Dr. Renu Saroj, patient testimonials, FAQ, and contact/booking information.
 - [Blog](https://alignasya.com/blog.html): The AlignAsya Wellness Journal — physiotherapy tips, recovery guidance, and everyday wellness articles.
 
 ## Specialties
