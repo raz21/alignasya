@@ -40,6 +40,15 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.1;
 }
 
+
+.footer-list li::before {
+    content: '\203A';
+  color: #9de13a;
+  padding-right: 10px;
+  font-size: 1.5em;
+  line-height: 0.9em;
+}
+
 .orange-check-list, .blue-check-list {
   list-style-type: "✓ ";
   padding-left: 20px;
@@ -99,7 +108,6 @@ nav ul {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #9de13a;
-  margin-bottom: 15px;
 }
 
 .footer-col a {
@@ -131,6 +139,36 @@ nav ul {
     border-style: solid;
     border-color: #e5e7eb;
 }
+
+
+@layer components {
+  .list-chevron {
+    @apply space-y-2 list-none pl-0;
+  }
+
+  .list-chevron li {
+    @apply flex items-center;
+  }
+
+  .list-chevron li::before {
+    content: '\203A';
+    @apply mr-2 text-blue-500 text-2xl leading-none;
+  }
+
+  .list-check {
+    @apply space-y-2 list-none pl-0;
+  }
+
+  .list-check li {
+    @apply flex items-center text-gray-700;
+  }
+
+  .list-check li::before {
+    content: '\2713';
+    @apply inline-flex items-center justify-center mr-2 text-cyan-500 leading-none;
+  }
+}
+
 
 /* Responsive Media Queries */
 @media(max-width:768px) {
