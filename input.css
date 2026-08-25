@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0.9em;
 }
 
+
 .orange-check-list, .blue-check-list {
   list-style-type: "✓ ";
   padding-left: 20px;
@@ -108,12 +109,25 @@ nav ul {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #9de13a;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.footer-col h5:after {
+    content: "";
+    background-color: #149ec2;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-col a {
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s;
+  color:#9acae1;
 }
 
 .iframe {
