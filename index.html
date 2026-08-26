@@ -67,6 +67,41 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+    /* Gallery carousel image overlay footer */
+    .gallery-overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem 1rem 0.75rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+      pointer-events: none;
+    }
+
+    .gallery-overlay a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      width: 100%;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.25;
+      text-decoration: none;
+      pointer-events: auto;
+      transition: color 0.2s ease;
+    }
+
+    .gallery-overlay a:hover,
+    .gallery-overlay a:focus-visible {
+      color: #a3e635;
+      text-decoration: underline;
+      outline: none;
+    }
   </style>
 </head>
 
@@ -258,7 +293,7 @@
         class="flex gap-4 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing scroll-smooth py-4 snap-x snap-mandatory">
         <!-- Card 1 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/sportsInjury.jpg" alt="Physiotherapist assessing a sports injury at AlignAsya"
@@ -284,7 +319,7 @@
 
         <!-- Card 2 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/orthospine.jpg"
@@ -313,7 +348,7 @@
 
         <!-- Card 3 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/neurological.jpg"
@@ -341,7 +376,7 @@
 
         <!-- Card 4 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/musculoskeletal.jpg"
@@ -370,7 +405,7 @@
 
         <!-- Card 5 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/antenatal.jpg"
@@ -400,7 +435,7 @@
 
         <!-- Card 6 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/geriatric.jpg"
@@ -431,7 +466,7 @@
 
         <!-- Card 7 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/pediatric.jpg"
@@ -461,7 +496,7 @@
 
         <!-- Card 8 -->
         <article
-          class="group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition flex flex-col justify-between flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-16px)] snap-start snap-start">
+          class="group transition flex flex-col flex-shrink-0 w-full justify-between lg:w-group bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl  sm:w-[calc(50%-12px)] md:w-[calc(33.33%-16px)] snap-start">
           <div>
             <div class="aspect-video">
               <img src="img/preventive.jpg"
@@ -528,7 +563,7 @@
     </div>
   </section>
 
-  <!-- Gallery / AI images -->
+  <!-- Gallery -->
   <section id="gallery" class="py-24 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
@@ -562,43 +597,83 @@
       <div id="galleryCarouselTrack"
         class="flex gap-4 overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing scroll-smooth py-2 snap-x snap-mandatory">
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh4.jpg" alt="Patient performing a guided strengthening exercise at AlignAsya"
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sportsInjury.jpg" alt="Patient performing a guided strengthening exercise at AlignAsya"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="sports-injury-management.html">
+              <span>Strengthening &amp; Rehab Exercises</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh5.jpg" alt="Physiotherapist performing manual therapy on a patient's shoulder"
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/manualTherapy.jpg" alt="Physiotherapist performing manual therapy on a patient's shoulder"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="orthopedic-spine-joint.html">
+              <span>Manual Therapy</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh6.jpg" alt="Physiotherapist applying electrotherapy treatment at AlignAsya"
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh7.jpg" alt="Physiotherapist applying electrotherapy treatment at AlignAsya"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="musculoskeletal-physiotherapy.html">
+              <span>Electrotherapy Treatment</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh7.jpg" alt="Reception and waiting area at AlignAsya clinic, Mira Road"
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/pediatric.jpg" alt="A Child-Friendly, Play-Based Approach to Pediatric Physiotherapy at AlignAsya"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="pediatric-physiotherapy.html">
+              <span>Pediatric Physiotherapy</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
           <img src="img/sh8.jpg" alt="Patient performing a balance and mobility exercise"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="neurological-rehabilitation.html">
+              <span>Balance &amp; Mobility Training</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh1.jpg" alt="Physiotherapist guiding a patient through a stretching exercise"
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/og-image.jpg" alt="Physiotherapist guiding a patient through a stretching exercise"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="sports-injury-management.html">
+              <span>Guided Stretching Sessions</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
           <img src="img/sh2.jpg" alt="Physiotherapist assessing a patient's joint mobility"
             class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="neurological-rehabilitation.html">
+              <span>Joint Mobility Assessment</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
         <div
-          class="flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
-          <img src="img/sh3.jpg" alt="Treatment room at AlignAsya clinic, Mira Road" class="w-full h-72 object-cover">
+          class="relative flex-shrink-0 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)] snap-start rounded-2xl overflow-hidden shadow-sm bg-white">
+          <img src="img/sh6.jpg" alt="Treatment room at AlignAsya clinic, Mira Road" class="w-full h-72 object-cover">
+          <div class="gallery-overlay">
+            <a href="#contact">
+              <span>Modern Treatment</span><span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
