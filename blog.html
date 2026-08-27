@@ -14,6 +14,14 @@
 <meta name="robots" content="index, follow">
 <link rel="stylesheet" href="style.css">
 
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Physiotherapy & Wellness Blog | AlignAsya, Mira Road" />
+  <meta name="twitter:description"
+    content="Physiotherapy tips, recovery guides and everyday wellness advice from AlignAsya team in Mira Road, Mumbai — move better, recover smarter." />
+  <meta name="twitter:image" content="https://alignasya.com/img/sh2.jpg" />
+
 <script>
 tailwind.config = {
   theme: {
@@ -210,5 +218,73 @@ document.querySelectorAll('.filter').forEach(btn => btn.onclick = () => {
     // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+
+  <!-- Structured Data: Blog index -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://alignasya.com/blog.html#webpage",
+        "url": "https://alignasya.com/blog.html",
+        "name": "Physiotherapy & Wellness Blog | AlignAsya, Mira Road",
+        "description": "Physiotherapy tips, recovery guides and everyday wellness advice from AlignAsya team in Mira Road, Mumbai — move better, recover smarter.",
+        "isPartOf": { "@id": "https://alignasya.com/#website" },
+        "about": { "@id": "https://alignasya.com/#organization" },
+        "mainEntity": { "@id": "https://alignasya.com/blog.html#article-list" },
+        "breadcrumb": { "@id": "https://alignasya.com/blog.html#breadcrumb" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://alignasya.com/blog.html#article-list",
+        "name": "AlignAsya physiotherapy and wellness articles",
+        "numberOfItems": 8,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": "https://alignasya.com/blog-back-pain.html", "name": "Why Your Back Hurts — and What You Can Do About It", "image": "https://alignasya.com/img/slide4.jpg" },
+          { "@type": "ListItem", "position": 2, "url": "https://alignasya.com/blog-daily-habits.html", "name": "Small Daily Habits That Keep Your Body Moving Well", "image": "https://alignasya.com/img/home.jpg" },
+          { "@type": "ListItem", "position": 3, "url": "https://alignasya.com/blog-returning-to-exercise.html", "name": "Returning to Exercise After an Injury: A Smarter Roadmap", "image": "https://alignasya.com/img/slide3.jpg" },
+          { "@type": "ListItem", "position": 4, "url": "https://alignasya.com/blog-cervical-spondylosis.html", "name": "Understanding Cervical Spondylosis", "image": "https://alignasya.com/img/cervical.jpg" },
+          { "@type": "ListItem", "position": 5, "url": "https://alignasya.com/blog-sciatica.html", "name": "Physiotherapy Treatment for Sciatica: What Actually Helps", "image": "https://alignasya.com/img/sciatica.jpg" },
+          { "@type": "ListItem", "position": 6, "url": "https://alignasya.com/blog-best-physiotherapist-mira-road.html", "name": "Why AlignAsya is the Best Physiotherapy Center", "image": "https://alignasya.com/img/kinesioTaping1.jpg" },
+          { "@type": "ListItem", "position": 7, "url": "https://alignasya.com/blog-pediatric-physiotherapy.html", "name": "Pediatric Physiotherapy for Children: Signs, Benefits & What to Expect", "image": "https://alignasya.com/img/pediatric.jpg" },
+          { "@type": "ListItem", "position": 8, "url": "https://alignasya.com/blog-womens-health-antenatal-care.html", "name": "Women's Health & Antenatal Care: A Physiotherapy Guide", "image": "https://alignasya.com/img/antenatal.jpg" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://alignasya.com/blog.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alignasya.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://alignasya.com/blog.html" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://alignasya.com/#website",
+        "url": "https://alignasya.com/",
+        "name": "AlignAsya Physiotherapy & Wellness Center",
+        "publisher": { "@id": "https://alignasya.com/#organization" }
+      },
+      {
+        "@type": "MedicalBusiness",
+        "@id": "https://alignasya.com/#organization",
+        "name": "AlignAsya Physiotherapy & Wellness Center",
+        "url": "https://alignasya.com/",
+        "logo": "https://alignasya.com/img/logo.jpg",
+        "telephone": "+91-9324474278",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop no. 2, Excel ark, Ramdev Park, Queens Park",
+          "addressLocality": "Mira Road, Thane, Mumbai",
+          "addressRegion": "MH",
+          "postalCode": "401107",
+          "addressCountry": "IN"
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
