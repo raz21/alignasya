@@ -31,6 +31,7 @@
 - [Pediatric Physiotherapy for Children](https://alignasya.com/blog-pediatric-physiotherapy.html): Signs, benefits and what to expect from child physiotherapy — from torticollis to developmental delays.
 - [Why AlignAsya is the Best Physiotherapy Center in Mira Road](https://alignasya.com/blog-best-physiotherapist-mira-road.html): How Dr. Renu Saroj and the AlignAsya team help Mira Road residents find lasting relief.
 - [Women's Health & Antenatal Care: A Physiotherapy Guide](https://alignasya.com/blog-womens-health-antenatal-care.html): Pelvic health, pregnancy-safe movement, postnatal recovery, and women's wellness across the lifespan.
+- [Best Physiotherapist in Mira Road: Expert Physiotherapy & Rehabilitation at AlignAsya](https://alignasya.com/blog-best-physiotherapist-mira-bhayandar.html): How AlignAsya provides personalized physiotherapy, rehabilitation, sports injury care, and home-based care in Mira Road and Mira-Bhayandar.
 
 ## Crawler Instructions
 User-agent: *
